@@ -1,6 +1,7 @@
 .navbar-inverse {
   /* background-color: #222; */
   background-color: transparent;
+  background-size: cover;
   background-image: url('img/film_crew_landing_page_bw.jpg');
   background-repeat: repeat-x;
 }
@@ -40,6 +41,19 @@
     font-weight: 400;
     font-style: normal;
     color: #FFF;
+}
+
+.text-align-center {
+    display: block;
+    font-family: "vollkorn";
+    font-size: 40px;
+    line-height: 1em;
+    text-align: center;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+      color: rgba(26,26,26,.6);
+
 }
 
 .social-icon {
