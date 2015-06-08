@@ -1,0 +1,76 @@
+.navbar-inverse {
+  /* background-color: #222; */
+  background-color: transparent;
+  background-image: url('img/film_crew_landing_page_bw.jpg');
+  background-repeat: repeat-x;
+}
+
+.navbar {
+  position: relative;
+  min-height: 400px;
+  }
+
+.banner-thumbnail-homepage {
+    top: 0px;
+    left: -23px;
+    width: 985px;
+    height: 654px;
+    position: relative;
+}
+
+
+.caret:before {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 12px;
+  border-top: 12px solid #999;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+}
+
+.company_name_masthead {
+    display: block;
+    font-family: "montserrat";
+    font-size: 45px;
+    line-height: 1em;
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    color: #FFF;
+}
+
+.social-icon {
+  width: 16px;
+  height: 16px;
+}
+
+
+
+/*TRANSITION INFO FOR "BUTTONS"*/
+/*transition: background-color 0.1s ease-in-out 0s, color 0.1s ease-in-out 0s;
+    transition-property: background-color, color;
+    transition-duration: 0.1s, 0.1s;
+    transition-timing-function: ease-in-out, ease-in-out;
+    transition-delay: 0s, 0s;*/
+
+
+   /* HOMEPAGE SCROLLDOWN CSS    display: block;
+    margin-left: auto;
+    margin-right: auto
+    .homepage-scroll-down {
+    bottom: 20px;
+    color: #FFF;
+    cursor: pointer;
+    height: 48px;
+    left: 50%;
+    margin-left: -24px;
+    position: absolute;
+    text-align: center;
+    width: 48px;
+    z-index: 100;
+    animation: 1.75s ease-in-out 0s normal none 1 running feature-text-anim;
+    transition: all 0.5s ease 0s;
+}
