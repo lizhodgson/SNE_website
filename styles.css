@@ -34,7 +34,7 @@
     display: block;
     font-family: "montserrat";
     font-size: 45px;
-    line-height: 1em;
+    line-height: 5em;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
@@ -87,4 +87,22 @@
     z-index: 100;
     animation: 1.75s ease-in-out 0s normal none 1 running feature-text-anim;
     transition: all 0.5s ease 0s;
+}*/
+
+.navbar-inner{
+  background-image: url('img/pigeons_cv_page.jpg');
+  background-repeat: repeat-x;
+}
+
+
+.above-title {
+display: block;
+font-family: "araprey";
+font-size: 25px;
+line-height:1em;
+text-align: center;
+letter-spacing: 2px;
+font-weight: 400;
+font-style: normal;
+color: #FFF;
 }
