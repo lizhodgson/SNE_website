@@ -96,13 +96,44 @@
 
 
 .above-title {
-display: block;
-font-family: "araprey";
-font-size: 25px;
-line-height:1em;
-text-align: center;
-letter-spacing: 2px;
-font-weight: 400;
-font-style: normal;
-color: #FFF;
+  display: block;
+  font-family: "araprey";
+  font-size: 25px;
+  line-height:1em;
+  text-align: center;
+  letter-spacing: 2px;
+  font-weight: 400;
+  font-style: normal;
+  color: #FFF;
 }
+
+.no-margin {
+  margin: 0px;
+}
+
+.no-padding {
+  padding:0px;
+}
+
+/*Footer*/
+
+a{
+  color:#00FFFF;
+}
+
+.bottom-footer{
+  margin-top:10px;
+  padding-top:10px;
+}
+
+.pre-footer{
+  background-color: #696969;
+}
+
+.site-footer{
+  background-color: #000000;
+  color:#fff;
+  margin-top: 30px;
+  text-align: center;
+}
+
