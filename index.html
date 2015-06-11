@@ -4,9 +4,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunday Night Entertainment</title>
   <link href = "bootstrap/css/bootstrap.min.css" rel = "stylesheet">
+  <link rel="icon" type="image/png" href="img/favicon.png" />
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
-  <link href='http://fonts.googleapis.com/css?family=Vollkorn:400italic,400,700' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
   <link href = "styles.css" rel = "stylesheet">
 </head>
 
@@ -14,7 +15,7 @@
   <main id="page" role="main">
 
   
-    <div class = "navbar navbar-inverse navbar-fixed-top">
+    <div class = "navbar navbar-inverse navbar-static-top">
       <div class = "container" >
         <a href = "#" class = "navbar-brand"><img src = "img/SNE_logo.png"></a>
     
@@ -24,7 +25,7 @@
             <span class = "icon-bar"></span>
           </button>
 
-          <div class = "collapse navbar-collapse navHeaderCollapse">
+          <div class = "collapse navbar-collapse navHeaderCollapse" style="margin-top:30px">
             <ul class ="nav navbar-nav navbar-right">
               <li class ="active"><a href = "#">HOME</a></li>
               <li><a href = "#">PROJECTS</a></li>
@@ -36,15 +37,14 @@
       </div> <!-- CONTAINER NAV -->
     
 
-      <div>
-        <h1 class = "company_name_masthead"><strong>Sunday Night Entertainment</strong></h1>
-          <center><p><a href="/resume">List of Credits</a>
-            <a href="/contact">Get in Touch</a></p><center>
-          </div>
-        
-          <center><div class = "homepage-scroll-down">
-            <span class="caret"></span>
-          </div></center>
+      <div class = "masthead_page_describe container-fluid">
+        <p id = "company_name_masthead">Sunday Night Entertainment</p>
+          
+          <div class = "credits_contact"><center><p><a href="/resume">List of Credits</a>
+            <a href="/contact">Get in Touch</a></p></center></div>
+      </div>
+
+      <div class="arrow-down"></div>
 
         </div>  
       </div>
@@ -52,16 +52,17 @@
 
 <!-- EVERYTHING AFTER THE BANNER AND BEFORE THE FOOTER STARTS HERE -->
 
-    <container class="h1-bio">
-      <div class= "block-content">
-        <h2 class="text-align-center">A Brief Background</h2></div>
-          <div class="block-text">
-            <p class="text-align-left">Executive producer Scott Harper founded Sunday Night Entertainment in 2001 following his first independent network commission “Cake Night,” a POV behind-the-scenes at an addiction recovery facility. New projects include Clara’s Big Ride, featuring the Canadian Olympian Clara Hughes. Premiering to over a million viewers in January, it’s one part social issue film on the stigma surrounding mental health, one part epic red movie, and one part love letter to Canada.Subsequently Scott wrote, produced and directed Lost Adventures of Childhood — which explored the vanishing phenomenon of unsupervised play among children — continues to sell internationally, 28 countries and counting. It won the Golden Sheaf for Best Science Documentary at the Yorkton Film Festival.</p>
-          </div>
-          <br>
-          <br>
-          <br>
-    </container>
+
+<div class = "container">
+
+  <div class = "jumbotron">
+    <h2>A Brief Background</h2> 
+    <p class = "text-align-center">Scott Harper founded Sunday Night in 2001 after landing his first independent &ldquo;Cake Night,&rdquo; a POV behind-the-scenes look at addiction recovery. New projects include &ldquo;Clara’s Big Ride,&rdquo; featuring Olympian Clara Hughes. A social issue film on the stigma of mental illness, viewed by millions. Scott wrote, produced and directed the award-winning &ldquoLost Adventures of Childhood&rdquo;&#8212;which explored the vanishing phenomenon of unsupervised play among children. The film has sold in 28 countries and counting. Up next: &ldquo;You're Soaking In It,&rdquo; at take on the disrupted 21st century ad agency.</p>
+  </div>  
+
+</div>  
+
+
 
 <!-- Start of the Footer -->
 

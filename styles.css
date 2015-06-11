@@ -6,10 +6,32 @@
   background-repeat: repeat-x;
 }
 
+.navbar-right {
+  font-family: "PT sans";
+  font-weight: 400;
+  color: #fff;
+}
+
+.navbar-inverse .navbar-nav > .active > a, 
+.navbar-inverse .navbar-nav > .active > a:hover, 
+.navbar-inverse .navbar-nav > .active > a:focus {
+color: #fff;
+padding: 10px;
+background-color: transparent;
+border: 1px solid #fff;
+}
+
+/*trying to reduce area around nav list for active item*/
+.navbar-inverse .navbar-nav > .active > li a {
+padding: 5px;
+}
+
+
 .navbar {
   position: relative;
   min-height: 400px;
   }
+
 
 .banner-thumbnail-homepage {
     top: 0px;
@@ -20,9 +42,25 @@
 }
 
 
+
+
+/*<!-- trying out downward arrow -->*/
+.arrow-down {
+  width: 0; 
+  height: 0; 
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  position: absolute;
+  left: 50%;
+  margin-left: -10px;
+  border-top: 20px solid #fff;
+}
+
+
 .caret:before {
   content: '';
-  position: absolute;
+  display: block;
+  /*position: absolute;*/
   top: 25%;
   left: 12px;
   border-top: 12px solid #999;
@@ -30,11 +68,30 @@
   border-right: 12px solid transparent;
 }
 
-.company_name_masthead {
+.caret:after {
+  content: '';
+  position: absolute;
+  top: 25%;
+  left: 13px;
+  border-top: 11px solid #fff;
+  border-left: 11px solid transparent;
+  border-right: 11px solid transparent;
+}
+
+.caret:hover:before {
+  border-top-color: #222;
+}
+
+
+/*end of code for scrolldown caret in masthead/banner*/
+
+#company_name_masthead {
     display: block;
+    height: 200px;
+    margin-bottom: -10px;
     font-family: "montserrat";
-    font-size: 45px;
-    line-height: 5em;
+    font-size: 30px;
+    line-height: 9em;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
@@ -43,18 +100,25 @@
     color: #FFF;
 }
 
-.text-align-center {
-    display: block;
-    font-family: "vollkorn";
-    font-size: 40px;
-    line-height: 1em;
-    text-align: center;
-    letter-spacing: 0px;
-    font-weight: 400;
-    font-style: normal;
-      color: rgba(26,26,26,.6);
+.credits_contact {
+  margin-top: -30px;
+  margin-bottom: 75px;
 
 }
+
+.credits_contact p a {
+    border: 1px solid #fff;
+    letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: .5em .75em;
+    margin: 10px;
+    font-family: "montserrat";
+    color: #fff;
+    text-transform: uppercase;
+  }
+
 
 .social-icon {
   width: 16px;
@@ -89,21 +153,46 @@
     transition: all 0.5s ease 0s;
 }*/
 
-.navbar-inner{
+.navbar-inner {
   background-image: url('img/pigeons_cv_page.jpg');
   background-repeat: repeat-x;
 }
 
+.jumbotron {
+  background-color: transparent;
+
+}
+
+  h2 {
+    font-family: "crimson";
+    text-align: center;
+    color: rgba(26, 26, 26, 0.9);
+    font-size: 34px;
+    letter-spacing: 0px;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.container .jumbotron .text-align-center {
+  font-family: "PT sans";
+  text-align: center;
+  font-size: 13px;
+  line-height: 2em;
+  letter-spacing: 0px;
+  font-weight: 400;
+/*  font-style: normal;*/
+  color: rgba(26, 26, 26, 0.6);
+}
 
 .above-title {
   display: block;
-  font-family: "araprey";
+  font-family: "crimson";
   font-size: 25px;
   line-height:1em;
   text-align: center;
   letter-spacing: 2px;
   font-weight: 400;
-  font-style: normal;
+  font-style: italic;
   color: #FFF;
 }
 
