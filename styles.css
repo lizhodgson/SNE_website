@@ -1,8 +1,10 @@
+/*Navbar*/
+
 .navbar-inverse {
   /* background-color: #222; */
   background-color: transparent;
   background-size: cover;
-  background-image: url('img/film_crew_landing_page_bw.jpg');
+  background-image: url('img/resume_page.jpg');
   background-repeat: repeat-x;
 }
 
@@ -16,9 +18,13 @@
 .navbar-inverse .navbar-nav > .active > a:hover, 
 .navbar-inverse .navbar-nav > .active > a:focus {
 color: #fff;
-padding: 10px;
+padding: 13px;
 background-color: transparent;
 border: 1px solid #fff;
+}
+
+.collapse.navbar-collapse.navHeaderCollapse {
+  margin-top:30px
 }
 
 /*trying to reduce area around nav list for active item*/
@@ -122,6 +128,15 @@ padding: 5px;
 .social-icon {
   width: 16px;
   height: 16px;
+}
+
+h2.above-title {
+  position: relative;
+  bottom: -90px; 
+}
+
+.credits_contact.download_resume {
+  margin-top: -10px;
 }
 
 
@@ -242,12 +257,15 @@ a{
 
 .pre-footer {
   background-color: #696969;
-  min-height: 50px;
+  min-height: 40px;
 }
 
-.pre-footer-text h2 {
-  color: #fff;
+.pre-footer-text {
+  color: #FFFFFF;
   text-decoration: none;
+  font-size: 150%;
+  position: relative;
+  bottom: -8px;
 }
 
 
