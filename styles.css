@@ -49,7 +49,6 @@ padding: 5px;
 
 
 
-
 /*<!-- trying out downward arrow -->*/
 .arrow-down {
   width: 0; 
@@ -126,8 +125,11 @@ padding: 5px;
 
 
 .social-icon {
-  width: 16px;
-  height: 16px;
+  width: 32px;
+  height: 32px;
+  /*padding: .5em .75em;*/
+  margin: 10px;
+  margin-bottom: 40px;
 }
 
 h2.above-title {
@@ -204,6 +206,16 @@ h2.above-title {
 /*  font-style: normal;*/
   color: rgba(26, 26, 26, 0.6);
   margin-bottom: 30px;
+}
+
+hr {
+  margin-top: -20px;
+  margin-bottom: 50px;
+}
+
+.space_hack {
+  border-color: #fff;
+  margin-bottom: 75px;
 }
 
 .download_cv .links .cv_download {
