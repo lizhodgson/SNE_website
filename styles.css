@@ -4,7 +4,7 @@
   /* background-color: #222; */
   background-color: transparent;
   background-size: cover;
-  background-image: url('img/resume_page.jpg');
+  background-image: url('img/film_crew_landing_page_bw.jpg');
   background-repeat: repeat-x;
 }
 
@@ -46,7 +46,6 @@ padding: 5px;
     height: 654px;
     position: relative;
 }
-
 
 
 /*<!-- trying out downward arrow -->*/
@@ -169,8 +168,13 @@ h2.above-title {
     transition: all 0.5s ease 0s;
 }*/
 
-.navbar-inner {
+.navbar-inner.nav-project {
   background-image: url('img/pigeons_cv_page.jpg');
+  background-repeat: repeat-x;
+}
+
+.navbar-inner.nav-resume {
+  background-image: url('img/resume_page.jpg');
   background-repeat: repeat-x;
 }
 
