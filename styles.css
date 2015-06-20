@@ -168,6 +168,12 @@ h2.above-title {
     transition: all 0.5s ease 0s;
 }*/
 
+.navbar-inner.nav-index {
+  background-image: url('img/film_crew_landing_page_bw.jpg');
+  background-repeat: repeat-x;
+  background-position: 0% 58%;
+}
+
 .navbar-inner.nav-project {
   background-image: url('img/pigeons_cv_page.jpg');
   background-repeat: repeat-x;
@@ -176,6 +182,13 @@ h2.above-title {
 .navbar-inner.nav-resume {
   background-image: url('img/resume_page.jpg');
   background-repeat: repeat-x;
+  background-position: 0% 28%;
+}
+
+.navbar-inner.nav-contact {
+  background-image: url('img/toronto_at_night_BW.jpg');
+  background-repeat: repeat-x;
+  background-position: 0% 56%;
 }
 
 
@@ -303,9 +316,10 @@ a{
 
 
 /*contact page*/
-.container-fluid {
+
+/*.container-fluid {
   margin-top: 100px;
-}
+}*/
 
 .shatner {
 /*  float: right;*/
