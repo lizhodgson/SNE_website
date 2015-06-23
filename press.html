@@ -4,57 +4,43 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Sunday Night Entertainment</title>
   <link href = "bootstrap/css/bootstrap.min.css" rel = "stylesheet">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
   <link rel="icon" type="image/png" href="img/favicon.png" />
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
   <link href = "styles.css" rel = "stylesheet">
+  <link rel="stylesheet" href="pretty_photo/css/prettyPhoto.css">
 </head>
+<!-- <!-Start of the Body -->
 
-<body>
-  <main id="page" role="main">
-
-  
-    <div class = "navbar navbar-inverse navbar-inner nav-resume navbar-static-top">
-      <div class = "container" >
-        <a href = "#" class = "navbar-brand"><img src = "img/SNE_logo.png"></a>
-    
-          <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-            <span class = "icon-bar"></span>
-          </button>
-
-          <div class = "collapse navbar-collapse navHeaderCollapse">
-            <ul class ="nav navbar-nav navbar-right">
-              <li><a href = "#">HOME</a></li>
-              <li><a href = "#">PROJECTS</a></li>
-              <li class ="active"><a href = "#">PRESS</a></li>
-              <li><a href = "#">RESUME</a></li>
-              <li><a href = "#">CONTACT</a></li>
-             </ul> 
-          </div>  <!-- NAVIGATION -->
-      </div> <!-- CONTAINER NAV -->
-    
-
-      <div class = "masthead_page_describe container-fluid">
-        <p id = "company_name_masthead">selected media</p>
-          
-        
-      <div class ="credits_contact download_resume">
-          <center><p class = "links"><a class = "cv_download" href="/sne_cv.pdf">DOWNLOAD RESUME</a></p></center>
-      </div>
-
-        </div>  
-      </div>
-    </div>
-
-<!-- EVERYTHING AFTER THE BANNER AND BEFORE THE FOOTER STARTS HERE -->
+RECENT PRESS: Secret LIfe of Pigeons: CBC-TV's The Nature of Things with David Suzuki
 
 
- 
+<p class = "press_link">The Globe and Mail - John Doyle: "For emptional impact, meet the pigeons"</p>
 
-<!-- Start of the Footer -->
+<a href=http://www.theglobeandmail.com/arts/television/john-doyle-for-emotional-impact-meet-the-pigeons/article21654136/></a>
+
+<p class = "press_link">Montreal Gazette - Bill Brownstein: "Misconceptions about pigeons ruffle this expert's feathers"</p>
+
+<a href=http://montrealgazette.com/entertainment/local-arts/misconceptions-ruffle-his-feathers></a>
+
+<p class = "press_link">Winnipeg Free Press - Brad Oswald: "CBC documentary delves into fascinating, astonishing world of pigeons"</p>
+
+<p class = "press_link">The Huffington Post - Rick Mele: "The Secret Life Of Pigeons' Review: Rebranding Nature's Most Misunderstood Bird"</p>
+
+<a href=http://www.huffingtonpost.ca/2014/11/18/secret-life-of-pigeons-nature-of-things_n_6180848.html?utm_hp_ref=canada-tv</a>
+
+
+
+<p class = "press_link">Now Magazine - Lia Grainger: "Pigeons: More Than Just Rats With Wings"</p>
+<a href=https://nowtoronto.com/movies/television/pigeons-not-just-rats-with-wings/></a>
+
+
+
+
+
+<!-- <!-Start of the Footer -->
 
 <footer class = "site-footer">
     <div class = "pre-footer">
@@ -98,7 +84,16 @@
 $(document).ready(function(){
 $("[rel^='prettyPhoto']").prettyPhoto();
 });
+
+$(window).scroll( function(){
+  var topWindow = $(window).scrollTop();
+  var topWindow = topWindow * 1.5;
+  var windowHeight = $(window).height();
+  var position = topWindow / windowHeight;
+  position = 1 - position;
+  $('.arrow-wrap').css('opacity', position);
+});
 </script>
-  
+ 
 </body>
 </html>
