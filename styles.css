@@ -357,6 +357,12 @@ p.contact_info {
   float: right;
 }
 
+/* Table */
+
+.table th, .table td { 
+     border-top: none !important; 
+ }
+
 /* Scroll Indicator - size adjusting CSS*/
 
 html, body {
