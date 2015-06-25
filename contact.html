@@ -59,8 +59,13 @@
         <div class="col-lg-6">
           <div class = "contact_info">
             <h2 class = "contact_us">Contact Information</h2>
-            <p class = "contact_info"><a href = "tel:+14169194829" class = "phone-number">416.919.4829</a><br><a href = "mailto:scott@sundaynight.ca" class = "email">scott@sundaynight.ca</a><br>199 Clinton Street<br>Toronto, Ontario | M6G 2Y4</p>
-            <div class = "download_cv">
+            <p class = "contact_info">
+              <a href = "tel:+14169194829" class = "phone-number">416.919.4829</a><br>
+              <a href = "mailto:scott@sundaynight.ca" class = "email">scott@sundaynight.ca</a><br>
+              199 Clinton Street<br>
+              Toronto, Ontario | M6G 2Y4
+            </p>
+            <div class = "col-lg-6 download_cv">
               <p class = "links"><a class = "cv_download" href="/pdf/sne_cv.pdf">download cv</a></p>
             </div>
           </div> <!-- contact info -->
@@ -79,58 +84,45 @@
 </div> <!-- end of contact information -->
 
 <div class="container-fluid"> <!-- contact form and google map -->
-    <div class="row">
-        <div class="col-lg-6">
-            <form class="form-horizontal" role="form" method="post" action="index.php">
-    <div class="form-group">
-        <label for="first_name" class="col-sm-2 control-label">First Name*</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" value="">
-        </div>
 
-        <label for="last_name" class="col-sm-2 control-label">Last Name*</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="name" name="name" value="">
-        </div>
+  <form method="post">
+    <div class="col-md-4">
+      <div class="form-group">
 
+        <label for="name">* Name:</label>
+        <input type="text" name="name" class="form-control" placeholder="e.g., John Doe" />
+        
+      </div>
+
+      <div class="form-group">
+
+        <label for="email">* Email Address:</label>
+        <input type="email" name="email" class="form-control" placeholder="e.g., your.address@email.com" />
+        
+      </div>
+
+      <div class="form-group">
+
+        <label for="phone"> Phone number:</label>
+        <input type="phone" name="phone" class="form-control" placeholder="e.g., 416-555-5555" />
+        
+      </div>
+
+      <div class="form-group">
+
+        <label for="comment">* Message:</label>
+        <textarea name="comment" class="form-control"></textarea>
+      
+      </div>
+
+      <input type="submit" class="btn btn-success btn-md" value="Submit">
+      <p>*You cannot leave this empty.</p>
     </div>
-    <div class="form-group">
-        <label for="email" class="col-sm-2 control-label">Email*</label>
-        <div class="col-sm-10">
-            <input type="email" class="form-control" id="email" name="email" value="">
-        </div>
-    </div>
-
-    <div class="form-group">
-        <label for="subject" class="col-sm-2 control-label">Subject*</label>
-        <div class="col-sm-10">
-            <input type="text" class="form-control" id="subject" name="subject">
-        </div>
-    </div>
+  </form>    
 
 
 
-
-
-    <div class="form-group">
-        <label for="message" class="col-sm-2 control-label">Message*</label>
-        <div class="col-sm-10">
-            <textarea class="form-control" rows="4" name="message"></textarea>
-        </div>
-    </div>
-
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <input id="submit" name="submit" type="submit" value="Send" class="btn btn-primary">
-        </div>
-    </div>
-    <div class="form-group">
-        <div class="col-sm-10 col-sm-offset-2">
-            <! Will be used to display an alert to the user>
-        </div>
-    </div>
-</form>
-        </div>
+       
         <div class="col-lg-6">
             <div id = "google_map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2886.465207592003!2d-79.41509470000001!3d43.659293800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1434559911795" width="400" height="300" frameborder="0" style="border:0"></iframe></div> <!-- google map -->
         </div>
@@ -142,7 +134,7 @@
 <footer class = "site-footer">
     <div class = "pre-footer">
       <h2 class = "pre-footer-text">For sales information please contact:
-        <a class href="mailto:alexandra@beyonddistribution.com" target="_top" class = "beyond">alexandra@beyonddistribution.com</a>
+        <a class="contact-person" href="mailto:alexandra@beyonddistribution.com" target="_top" class = "beyond">alexandra@beyonddistribution.com</a>
       </h2> 
     </div>
     
