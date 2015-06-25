@@ -363,6 +363,19 @@ p.contact_info {
      border-top: none !important; 
  }
 
+ /* Contact page-Resume button */
+
+.download_cv {
+  padding-left: 100px;
+  padding-top: 30px;
+}
+
+/* Contact page-Image */
+
+.img-res {
+  padding-bottom: 100px;
+}
+
 /* Scroll Indicator - size adjusting CSS*/
 
 html, body {
