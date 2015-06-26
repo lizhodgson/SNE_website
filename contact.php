@@ -1,3 +1,56 @@
+<?php
+ 
+  if ($_POST["submit"]) {
+      
+     if (!$_POST['name']) {
+ 
+       $error="<br />Please enter your name";
+ 
+     }
+      
+     if (!$_POST['email']) {
+ 
+       $error.="<br />Please enter your email address";
+ 
+     }
+
+     if (!$_POST['comment']) {
+ 
+       $error.="<br />Please enter a messsage";
+ 
+     }
+      
+    if ($_POST['email']!="" AND !filter_var($_POST['email'], FILTER_VALIDATE_EMAIL)) {
+      
+      $error.="<br />Please enter a valid email address";
+ 
+     }
+      
+     if ($error) {
+ 
+      $result='<div class="alert alert-danger"><strong>There were error(s) in your form:</strong>'.$error.'</div>';
+ 
+      } else {
+ 
+      if (mail("scott@sundaynight.ca", "Comment from website!", "Name: " .$_POST['name'] ."
+      
+      Phone number: " .$_POST['phone']." 
+      
+      Email: " .$_POST['email']."
+      
+      Comment: ". $_POST['comment'])) {
+ 
+        $result='<div class="alert alert-success"><strong>Thank you. Your form has been submitted!</strong></div>';
+ 
+      } else {
+ 
+      $result='<div class="alert alert-danger">Sorry, there was an error sending your message. Please try again later.</div>';
+ 
+      }
+    }
+  }
+?>
+
 <!DOCTYPE html>
 
 <head>
@@ -89,15 +142,17 @@
     <div class="col-md-4">
       <div class="form-group">
 
-        <label for="name">* Name:</label>
-        <input type="text" name="name" class="form-control" placeholder="e.g., John Doe" />
+      <?php echo $result; ?>
+
+        <label for="name">Name:</label>
+        <input type="text" name="name" class="form-control" placeholder="e.g., John Doe" value="<?php echo $_POST['name']; ?>" />
         
       </div>
 
       <div class="form-group">
 
-        <label for="email">* Email Address:</label>
-        <input type="email" name="email" class="form-control" placeholder="e.g., your.address@email.com" />
+        <label for="email">Email Address:</label>
+        <input type="email" name="email" class="form-control" placeholder="e.g., your.address@email.com" value="<?php echo $_POST['email']; ?>" />
         
       </div>
 
@@ -110,23 +165,19 @@
 
       <div class="form-group">
 
-        <label for="comment">* Message:</label>
-        <textarea name="comment" class="form-control"></textarea>
+        <label for="comment">Message:</label>
+        <textarea name="comment" class="form-control" <?php echo $_POST['comment']; ?>></textarea>
       
       </div>
 
-      <input type="submit" class="btn btn-success btn-md" value="Submit">
-      <p>*You cannot leave this empty.</p>
+      <input type="submit" name="submit" class="btn btn-success btn-md" value="Submit">
     </div>
-  </form>    
+  </form>
 
+  <!--Google Map -->
 
-
+  <div id="map-container" class="col-md-4"></div>
        
-        <div class="col-lg-6">
-            <div id = "google_map"><iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2886.465207592003!2d-79.41509470000001!3d43.659293800000015!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sca!4v1434559911795" width="400" height="300" frameborder="0" style="border:0"></iframe></div> <!-- google map -->
-        </div>
-    </div>
 </div>
  
 <!--Start of the Footer -->
@@ -167,8 +218,33 @@
   </main>
 
 <script src="bootstrap/js/jquery.min.js"></script>
-<script src="bootstrap/js/bootstrap.min.js"></script> 
-
+<script src="bootstrap/js/bootstrap.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=false"></script> 
+<script>  
+ 
+      function init_map() {
+    var var_location = new google.maps.LatLng(43.659275, -79.415151);
+ 
+        var var_mapoptions = {
+          center: var_location,
+          zoom: 17
+        };
+ 
+    var var_marker = new google.maps.Marker({
+      position: var_location,
+      map: var_map,
+      title:"Sunday Night Entertainment"});
+ 
+        var var_map = new google.maps.Map(document.getElementById("map-container"),
+            var_mapoptions);
+ 
+    var_marker.setMap(var_map); 
+ 
+      }
+ 
+      google.maps.event.addDomListener(window, 'load', init_map);
+ 
+</script>
   
 </body>
 </html>
