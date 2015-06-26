@@ -329,9 +329,7 @@ a.contact-person{
 margin-left: 125px;
 }
 
-#google_map {
 
-}
 
 
 h2.contact_us {
@@ -356,8 +354,37 @@ p.contact_info {
 }
 
 
-#google_map {
-  float: right;
+/* Google Map */
+/*html { 
+  height: 100%; 
+}
+body { 
+  height: 100%; 
+}
+#map-container { 
+  height: 30%; 
+}*/
+
+#map-outer {  
+  height: 440px; 
+  padding: 20px; 
+  border: 2px solid #CCC; 
+  margin-bottom: 20px; 
+  background-color:#FFF 
+}
+
+#map-container { 
+  height: 400px 
+}
+
+@media all and (max-width: 991px) {
+  #map-outer  { 
+    height: 650px 
+  }
+}
+
+#map-container.col-md-4 {
+  float:right;
 }
 
 /* Table */
