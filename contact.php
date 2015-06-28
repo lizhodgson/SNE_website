@@ -139,7 +139,7 @@
 <div class="container-fluid"> <!-- contact form and google map -->
 
   <form method="post">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="form-group">
 
       <?php echo $result; ?>
@@ -176,7 +176,7 @@
 
   <!--Google Map -->
 
-  <div id="map-container" class="col-md-4"></div>
+  <div id="map-container" class="col-md-6"></div>
        
 </div>
  
