@@ -169,7 +169,7 @@ h2.above-title {
 }*/
 
 .navbar-inner.nav-index {
-  background-image: url( );
+  background-image: url('img/film_crew_landing_page_bw.jpg');
   background-repeat: repeat-x;
   background-position: 0% 58%;
 }
@@ -250,8 +250,17 @@ hr {
   color: #000;
 }
 
-
+  
 /*END OF BIO AND BACKGROUND AREA */
+
+/* COMPLETE FILMOGRAPHY BUTTON */
+
+p.links {
+  margin-bottom: 70px;
+  margin-top: 30px;
+}
+
+/* END OF COMPLETE FILMOGRAPHY BUTTON */
 
 .above-title {
   display: block;
@@ -426,7 +435,7 @@ html, body {
   position:absolute;
   z-index:1;
   left:50%;
-  top:-5em;
+  top: -5em;
   margin-left:-5em;
   background:#111;
   width:10em;
