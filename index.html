@@ -56,32 +56,33 @@
 
     <!-- Scroll indicator starts -->  
       
-      <section class="header">
-      </section>
       <section class="main">
         <a class="arrow-wrap" href="#content">
           <span class="arrow"></span>
         </a>
-      </section>
-
+       
         </div>  
       </div>
     </div>
 
     <!-- Scroll indicator ends -->  
-
+  
+  
 <!-- EVERYTHING AFTER THE BANNER AND BEFORE THE FOOTER STARTS HERE -->
 
-
-<div class = "container">
+<div class="content" id="content">
+  <div class = "container">
 
   <div class = "jumbotron">
     <h2>A Brief Background</h2> 
     <p class = "text-align-center">Scott Harper founded Sunday Night in 2001 after landing his first independent &ldquo;Cake Night,&rdquo; a POV behind-the-scenes look at addiction <br>recovery. New projects include &ldquo;Clara&#39;s Big Ride,&rdquo;. Viewed by millions, it features Olympian Clara Hughes and looks at the issue of stigma<br> and mental illness. Scott wrote, produced and directed the award-winning &ldquo;Lost Adventures of Childhood,&rdquo; an exploration of the vanishing phenomenon of unsupervised play among kids. The film has sold in 28 countries and counting. Like a real life version of The Office, his <br>CTV documentary &ldquo;Sunday Night&rdquo; took an ironic look at trials and tribulations inside a temp agency. Up next: &ldquo;You're Soaking In It,&rdquo; at take <br>on the disrupted 21st century ad agency. Filming this summer, it will air on CBC TV.</p>
 
-    <div class = "download_cv">
-      <center><p class = "links"><a class = "cv_download" href="/pdf/sne_cv.pdf">download cv</a></p></center>
+    <div class = "container dl_button download_cv">
+      <p class = "links">
+        <a class = "cv_download" href="/pdf/sne_cv.pdf">download cv</a>
+      </p> 
     </div>
+
   </div>  
 
 </div>  
@@ -125,15 +126,17 @@
 
   </div><!--container -->
 
-    <div id = "projects_link" class = "download_cv">
-      <center>
-        <p class = "links">
-          <a class = "cv_download" href="http://sundaynight.ca/projects.html">complete filmography</a>
-        </p>
-      </center>
+    <div id = "projects_link" class ="container download_cv">  
+      <p class = "links">
+        <a class = "cv_download" href="http://sundaynight.ca/projects.html">complete filmography</a>
+      </p>
     </div>
 
-</div>
+</div>   
+
+  </div>
+  
+</section>
 
 <!--Start of the Footer -->
 
@@ -181,14 +184,21 @@ $(document).ready(function(){
 $("[rel^='prettyPhoto']").prettyPhoto();
 });
 
-$(window).scroll( function(){
-  var topWindow = $(window).scrollTop();
-  var topWindow = topWindow * 1.5;
-  var windowHeight = $(window).height();
-  var position = topWindow / windowHeight;
-  position = 1 - position;
-  $('.arrow-wrap').css('opacity', position);
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
+
 </script>
  
 </body>

@@ -96,17 +96,23 @@
         </h2>
 
         <p id = "company_name_masthead">to get in touch</p>
-      <div class="arrow-down"></div>
 
-      <div class="arrow-down"></div>
-
-
+<!-- Scroll indicator starts -->  
+      
+      <section class="main">
+        <a class="arrow-wrap contact-arrow" href="#content">
+          <span class="arrow"></span>
+        </a>
+       
         </div>  
       </div>
     </div>
 
+<!-- Scroll indicator ends -->  
+
 <!-- EVERYTHING AFTER THE BANNER AND BEFORE THE FOOTER STARTS HERE -->
 
+<div class="content" id="content">
 <div class="container-fluid contact_page_top">
     <div class="row" class = "contact_info">
         <div class="col-lg-6">
@@ -181,6 +187,7 @@
   <div id="map-container" class="col-md-4"></div>
        
 </div>
+</div>
  
 <!--Start of the Footer -->
 
@@ -224,7 +231,7 @@
 <script src="http://maps.google.com/maps/api/js?sensor=false"></script> 
 <script>  
  
-      function init_map() {
+function init_map() {
     var var_location = new google.maps.LatLng(43.659275, -79.415151);
  
         var var_mapoptions = {
@@ -244,8 +251,24 @@
  
       }
  
-      google.maps.event.addDomListener(window, 'load', init_map);
+google.maps.event.addDomListener(window, 'load', init_map);
  
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 </script>
   
 </body>

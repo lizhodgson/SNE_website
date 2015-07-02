@@ -45,13 +45,24 @@
         </h2>
 
         <p id = "company_name_masthead">check out our projects</p>
-        <div class="arrow-down"></div>
+        
 
+<!-- Scroll indicator starts -->  
+      
+      <section class="main">
+        <a class="arrow-wrap projects-arrow" href="#content">
+          <span class="arrow"></span>
+        </a>
+       
         </div>  
       </div>
     </div>
 
+<!-- Scroll indicator ends --> 
+
 <!-- EVERYTHING AFTER THE BANNER AND BEFORE THE FOOTER STARTS HERE -->
+
+<div class="content" id="content">
 
     <container class="h1-bio">
       <div class= "block-content">
@@ -173,8 +184,8 @@
 
   </div><!--container -->
 
-  <div class = "space_hack"> <!-- something I put in to add space-->
-  </div>     
+  <div class = "space_hack"></div>     
+</div>
 </div>
 
 <!--Start of the Footer -->
@@ -219,9 +230,26 @@
 <script src="pretty_photo/js/jquery.prettyPhoto.js"></script>
 
 <script>
+
 $(document).ready(function(){
-$("[rel^='prettyPhoto']").prettyPhoto();
+  $("[rel^='prettyPhoto']").prettyPhoto();
 });
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
+});
+
 </script>
 
 </body>

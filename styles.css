@@ -213,6 +213,11 @@ h2.above-title {
     font-style: normal;
 }
 
+h2.text-align-center {
+ padding-top: 30px; 
+}
+
+
 .container .jumbotron .text-align-center {
   font-family: "PT sans";
   text-align: center;
@@ -398,11 +403,24 @@ body {
      border-top: none !important; 
  }
 
+.table.table-hover{
+ margin-top: 40px; 
+}
+ 
  /* Contact page-Resume button */
 
-.download_cv {
-  padding-left: 100px;
-  padding-top: 30px;
+#projects_link.download_cv {
+  padding-left: 15px;
+  padding-top: 0px;
+  width: 290px;
+  height: 63px;
+}
+
+.dl_button.download_cv {
+  padding-left: 15px;
+  padding-top: 0px;
+  width: 214px;
+  height: 71px;
 }
 
 /* Contact page-Image */
@@ -431,11 +449,11 @@ html, body {
 }
 
 /* Scroll Indicator- the wrapper element that will become the outer circle */
-.arrow-wrap {
+.arrow-wrap{
   position:absolute;
   z-index:1;
   left:50%;
-  top: -5em;
+  top: 1px;
   margin-left:-5em;
   background:#111;
   width:10em;
@@ -445,6 +463,18 @@ html, body {
   font-size:0.5em;
   display:block;
   box-shadow:0px 0px 5px 0px #333;
+}
+
+.arrow-wrap.projects-arrow {
+ top: 30px; 
+}
+
+.arrow-wrap.resume-arrow {
+ top: -42px; 
+}
+
+.arrow-wrap.contact-arrow {
+ top: 30px; 
 }
 
 /* Scroll Indicator- a triangle to make the main part of the arrow */
