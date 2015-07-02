@@ -45,13 +45,24 @@
           <center><p class = "links"><a class = "cv_download" href="/pdf/sne_cv.pdf">DOWNLOAD RESUME</a></p></center>
       </div>
 
+     <!-- Scroll indicator starts -->  
+      
+      <section class="main">
+        <a class="arrow-wrap resume-arrow" href="#content">
+          <span class="arrow"></span>
+        </a>
+       
         </div>  
       </div>
     </div>
 
+    <!-- Scroll indicator ends -->  
+
 <!-- EVERYTHING AFTER THE BANNER AND BEFORE THE FOOTER STARTS HERE -->
 
 <!-- Table -->
+
+<div class="content" id="content">
 
 <div class="container">
   <table class="table table-hover">
@@ -134,6 +145,7 @@
 
   </table>
 </div>
+</div>
 
 <!--End of table -->
 
@@ -176,12 +188,24 @@
 
 <script src="bootstrap/js/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script> 
-<script src="pretty_photo/js/jquery.prettyPhoto.js"></script>
 
 <script>
-$(document).ready(function(){
-$("[rel^='prettyPhoto']").prettyPhoto();
+
+$(function() {
+  $('a[href*=#]:not([href=#])').click(function() {
+    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+      var target = $(this.hash);
+      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+      if (target.length) {
+        $('html,body').animate({
+          scrollTop: target.offset().top
+        }, 1000);
+        return false;
+      }
+    }
+  });
 });
+
 </script>
   
 </body>
