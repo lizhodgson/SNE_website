@@ -138,6 +138,7 @@ h2.above-title {
 
 .credits_contact.download_resume {
   margin-top: -10px;
+  margin-bottom: 0px;
 }
 
 
@@ -423,6 +424,11 @@ body {
   height: 71px;
 }
 
+.col-lg-6.download_cv {
+  padding-left: 114px;
+  padding-right: 4px;
+}
+
 /* Contact page-Image */
 
 .img-res {
@@ -466,15 +472,15 @@ html, body {
 }
 
 .arrow-wrap.projects-arrow {
- top: 30px; 
+ top: 21px; 
 }
 
 .arrow-wrap.resume-arrow {
- top: -42px; 
+ top: -44px; 
 }
 
 .arrow-wrap.contact-arrow {
- top: 30px; 
+ top: 21px; 
 }
 
 /* Scroll Indicator- a triangle to make the main part of the arrow */
