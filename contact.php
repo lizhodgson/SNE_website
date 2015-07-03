@@ -125,7 +125,9 @@
               Toronto, Ontario | M6G 2Y4
             </p>
             <div class = "col-lg-6 download_cv">
-              <p class = "links"><a class = "cv_download" href="/pdf/sne_cv.pdf">download cv</a></p>
+              <p class = "links">
+                <a class = "cv_download" href="/pdf/sne_cv.pdf">download cv</a>
+              </p>
             </div>
           </div> <!-- contact info -->
         </div>
