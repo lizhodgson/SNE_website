@@ -70,8 +70,10 @@
 
   
     <div class = "navbar navbar-inverse navbar-inner nav-contact navbar-static-top">
-      <div class = "container" >
-        <a href = "#" class = "navbar-brand"><img src = "img/SNE_logo.png"></a>
+      <div class = "container">
+        <a href = "http://sundaynight.ca/index.html" class = "navbar-brand">
+          <img src = "img/SNE_logo.png">
+        </a>
     
           <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
             <span class = "icon-bar"></span>
@@ -249,13 +251,21 @@ function init_map() {
         var var_map = new google.maps.Map(document.getElementById("map-container"),
             var_mapoptions);
  
-    var_marker.setMap(var_map); 
- 
+            var_marker.setMap(var_map); 
       }
  
 google.maps.event.addDomListener(window, 'load', init_map);
- 
 
+//opacity to the arrow
+$(window).scroll( function(){
+  var topWindow = $(window).scrollTop();
+  var topWindow = topWindow * 1.5;
+  var windowHeight = $(window).height();
+  var position = topWindow / windowHeight;
+  position = 1 - position;
+  $('.arrow-wrap').css('opacity', position);
+});
+ 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
     if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
