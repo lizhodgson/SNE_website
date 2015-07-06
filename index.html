@@ -5,7 +5,7 @@
   <title>Sunday Night Entertainment</title>
   <link href = "bootstrap/css/bootstrap.min.css" rel = "stylesheet">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
@@ -19,7 +19,7 @@
       <div class = "container">
         
         <a href = "http://sundaynight.ca/index.html" class = "navbar-brand">
-          <img src = "img/SNE_logo.png" class="img-responsive">
+          <img class="sne-logo" src = "img/SNE_logo.png" class="img-responsive">
         </a>
     
         <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
@@ -36,7 +36,9 @@
             <li><a href="http://sundaynight.ca/resume.html">RESUME</a></li>
             <li><a href="http://sundaynight.ca/contact.php">CONTACT</a></li>
           </ul> 
-        </div> <!-- NAVIGATION -->
+        </div><!-- NAVIGATION COLLAPSE -->
+
+        
       </div> <!-- CONTAINER NAV -->
     
 
@@ -77,8 +79,9 @@
           <a class = "cv_download" href="/pdf/sne_cv.pdf">download cv</a>
         </p> 
       </div>
-    </div>  
-</div>  
+    
+    </div> 
+  </div>  
 
 <div class = "section_break_rule">
   <hr width="75%">
@@ -156,7 +159,6 @@
           <a href="https://vimeo.com/user40751510">
             <img src="img/vimeo_logo.png" alt="vimeo logo" class="social-icon">  
           </a>
-
         </div>
 
     </div>      
@@ -176,7 +178,6 @@ $(document).ready(function(){
   $("[rel^='prettyPhoto']").prettyPhoto();
 });
 
-
 //opacity to the arrow
 $(window).scroll( function(){
   var topWindow = $(window).scrollTop();
@@ -186,7 +187,6 @@ $(window).scroll( function(){
   position = 1 - position;
   $('.arrow-wrap').css('opacity', position);
 });
-
 
 $(function() {
   $('a[href*=#]:not([href=#])').click(function() {
