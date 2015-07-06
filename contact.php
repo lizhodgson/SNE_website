@@ -58,7 +58,7 @@
   <title>Sunday Night Entertainment</title>
   <link href = "bootstrap/css/bootstrap.min.css" rel = "stylesheet">
   <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-  <link rel="icon" type="image/png" href="img/favicon.png" />
+  <link rel="icon" type="image/png" href="img/favicon.png">
   <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=PT+Sans:400,400italic' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic' rel='stylesheet' type='text/css'>
@@ -68,11 +68,10 @@
 <body>
   <main id="page" role="main">
 
-  
     <div class = "navbar navbar-inverse navbar-inner nav-contact navbar-static-top">
       <div class = "container">
         <a href = "http://sundaynight.ca/index.html" class = "navbar-brand">
-          <img src = "img/SNE_logo.png">
+          <img class="sne-logo" src = "img/SNE_logo.png" class="img-responsive">
         </a>
     
           <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
@@ -88,8 +87,8 @@
               <li><a href = "http://sundaynight.ca/press.html">PRESS</a></li>
               <li><a href = "http://sundaynight.ca/resume.html">RESUME</a></li>
               <li class ="active"><a href = "#">CONTACT</a></li>
-             </ul> 
-          </div>  <!-- NAVIGATION -->
+            </ul> 
+          </div>  <!-- NAVIGATION COLLAPSE -->
       </div> <!-- CONTAINER NAV -->
     
       <div>
@@ -106,8 +105,7 @@
           <span class="arrow"></span>
         </a>
        
-        </div>  
-      </div>
+      </div>  
     </div>
 
 <!-- Scroll indicator ends -->  
@@ -115,82 +113,83 @@
 <!-- EVERYTHING AFTER THE BANNER AND BEFORE THE FOOTER STARTS HERE -->
 
 <div class="content" id="content">
-<div class="container-fluid contact_page_top">
+  <div class="container-fluid contact_page_top">
     <div class="row" class = "contact_info">
-        <div class="col-lg-6">
-          <div class = "contact_info">
-            <h2 class = "contact_us">Contact Information</h2>
-            <p class = "contact_info">
-              <a href = "tel:+14169194829" class = "phone-number">416.919.4829</a><br>
-              <a href = "mailto:scott@sundaynight.ca" class = "email">scott@sundaynight.ca</a><br>
-              199 Clinton Street<br>
-              Toronto, Ontario | M6G 2Y4
+      <div class="col-lg-6">
+            
+        <div class = "contact_info">
+          <h2 class = "contact_us">Contact Information</h2>
+          <p class = "contact_info">
+            <a href = "tel:+14169194829" class = "phone-number">416.919.4829</a><br>
+            <a href = "mailto:scott@sundaynight.ca" class = "email">scott@sundaynight.ca</a><br>
+            199 Clinton Street<br>
+            Toronto, Ontario | M6G 2Y4
+          </p>
+          <div class = "col-lg-6 download_cv">
+            <p class = "links">
+              <a class = "cv_download" href="/pdf/sne_cv.pdf">download cv</a>
             </p>
-            <div class = "col-lg-6 download_cv">
-              <p class = "links">
-                <a class = "cv_download" href="/pdf/sne_cv.pdf">download cv</a>
-              </p>
-            </div>
-          </div> <!-- contact info -->
-        </div>
+          </div>
+        </div> <!-- contact info -->
+
+      </div>
 
         <div class="col-lg-6 img-res">
             <img class = "shatner" img src = "img/scott_and_shatner.jpg">
         </div>
+
     </div>
 
-    
- 
-    <div class = "section_break_rule">
-        <hr width="75%">
-    </div>  
-</div> <!-- end of contact information -->
+      <div class = "section_break_rule">
+          <hr width="75%">
+      </div> 
 
-<div class="container-fluid"> <!-- contact form and google map -->
+  </div> <!-- end of contact information -->
 
-  <form method="post">
-    <div class="col-md-4">
-      <div class="form-group">
+  <div class="container-fluid"> <!-- contact form and google map -->
 
-      <?php echo $result; ?>
+    <form method="post">
+      <div class="col-md-4">
+        <div class="form-group">
 
-        <label for="name">Name:</label>
-        <input type="text" name="name" class="form-control" placeholder="e.g., John Doe" value="<?php echo $_POST['name']; ?>" />
+        <?php echo $result; ?>
+
+          <label for="name">Name:</label>
+          <input type="text" name="name" class="form-control" placeholder="e.g., John Doe" value="<?php echo $_POST['name']; ?>" />
+          
+        </div>
+
+        <div class="form-group">
+
+          <label for="email">Email Address:</label>
+          <input type="email" name="email" class="form-control" placeholder="e.g., your.address@email.com" value="<?php echo $_POST['email']; ?>" />
+          
+        </div>
+
+        <div class="form-group">
+
+          <label for="phone"> Phone number:</label>
+          <input type="phone" name="phone" class="form-control" placeholder="e.g., 416-555-5555" />
+          
+        </div>
+
+        <div class="form-group">
+
+          <label for="comment">Message:</label>
+          <textarea name="comment" class="form-control" <?php echo $_POST['comment']; ?>></textarea>
         
+        </div>
+
+        <input type="submit" name="submit" class="btn btn-success btn-md" value="Submit">
       </div>
+    </form>
 
-      <div class="form-group">
+  <div class="col-md-4"></div>
 
-        <label for="email">Email Address:</label>
-        <input type="email" name="email" class="form-control" placeholder="e.g., your.address@email.com" value="<?php echo $_POST['email']; ?>" />
-        
-      </div>
-
-      <div class="form-group">
-
-        <label for="phone"> Phone number:</label>
-        <input type="phone" name="phone" class="form-control" placeholder="e.g., 416-555-5555" />
-        
-      </div>
-
-      <div class="form-group">
-
-        <label for="comment">Message:</label>
-        <textarea name="comment" class="form-control" <?php echo $_POST['comment']; ?>></textarea>
-      
-      </div>
-
-      <input type="submit" name="submit" class="btn btn-success btn-md" value="Submit">
-    </div>
-  </form>
-
- <div class="col-md-4"></div>
-
-  <!--Google Map -->
+<!--Google Map -->
 
   <div id="map-container" class="col-md-4"></div>
-       
-</div>
+         
 </div>
  
 <!--Start of the Footer -->
@@ -204,7 +203,11 @@
     
     <div class="bottom-footer">
 
-      <div class = "footer-logo"><center><img src="img/SNE_logo.png" alt="Alternate Logo"></center></div>  
+      <div class = "footer-logo">
+        <center>
+          <img src="img/SNE_logo.png" alt="Alternate Logo">
+        </center>
+      </div>  
 
       <p class = "copyright">&copy; Sunday Night Entertainment 2015</p>
         
