@@ -99,6 +99,11 @@ h2.above-title {
   margin-bottom: 0px;
 }
 
+/*.container dl_button download_cv {
+background-color: #000;
+
+}*/
+
 .navbar-inner.nav-index {
   background-image: url('img/film_crew_landing_page_bw.jpg');
   background-repeat: repeat-x;
@@ -151,6 +156,7 @@ img.sne-logo  {
     letter-spacing: 0px;
     font-weight: 400;
     font-style: normal;
+    margin-bottom: 20px;
 }
 
 h2.text-align-center {
@@ -190,7 +196,6 @@ hr {
   text-transform: uppercase;
   font-size: 12px;
   padding: 13px 26px;
-  margin: 10px;
   font-family: "montserrat";
   color: #000;
 }
@@ -248,7 +253,7 @@ a.contact-person{
   font-family: "PT sans";
   color: #FFFFFF;
   text-decoration: none;
-  font-size: 150%;
+  font-size: 120%;
   position: relative;
   padding-top: 20px;
   bottom: -8px;
