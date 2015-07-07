@@ -49,14 +49,12 @@ padding: 5px;
 }
 
 #company_name_masthead {
-
-    position: relative;
-    top: 77px;
     display: block;
-    height: 200px; 
+    height: 200px;
     margin-bottom: -10px;
     font-family: "montserrat";
     font-size: 30px;
+    line-height: 9em;
     text-transform: uppercase;
     text-align: center;
     letter-spacing: 2px;
@@ -118,14 +116,14 @@ background-color: #000;
 }
 
 .navbar-inner.nav-press {
-  background-image: url('img/press_page.jpg');
-  background-position: 47px 0px;
+  background-image: url('img/media_page.jpg');
+  background-repeat: repeat-x;
 }
 
 .navbar-inner.nav-resume {
   background-image: url('img/resume_page.jpg');
-  background-repeat: repeat-y;
-  background-position: 0px -175px;
+  background-repeat: repeat-x;
+  background-position: 0% 28%;
 }
 
 .navbar-inner.nav-contact {
@@ -137,8 +135,8 @@ background-color: #000;
 /*Logo*/
 
 img.sne-logo  {
-  width: 60px;
-  height: 60px;
+  width: 70px;
+  height: 70px;
 }
 .navbar-brand {
   margin-bottom: 25px;
@@ -168,7 +166,6 @@ img.sne-logo  {
 
 h2.text-align-center {
  padding-top: 30px; 
- margin-top: 65px;
 }
 
 
@@ -206,10 +203,6 @@ hr {
   padding: 13px 26px;
   font-family: "montserrat";
   color: #000;
-}
-
-#content.content {
-  padding-top: 55px;
 }
 
   
