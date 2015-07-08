@@ -96,23 +96,13 @@
           <p>The quickest way...</p>
         </h2>
 
-        <p id = "company_name_masthead">to get in touch</p>
-
-<!-- Scroll indicator starts -->  
-      
-      <section class="main">
-        <a class="arrow-wrap contact-arrow" href="#content">
-          <span class="arrow"></span>
-        </a>
+        <p id = "company_name_masthead">to get in touch</p> 
        
       </div>  
     </div>
 
-<!-- Scroll indicator ends -->  
-
 <!-- EVERYTHING AFTER THE BANNER AND BEFORE THE FOOTER STARTS HERE -->
 
-<div class="content" id="content">
   <div class="container-fluid contact_page_top">
     <div class="row" class = "contact_info">
       <div class="col-lg-6">
@@ -258,31 +248,6 @@ function init_map() {
       }
  
 google.maps.event.addDomListener(window, 'load', init_map);
-
-//opacity to the arrow
-$(window).scroll( function(){
-  var topWindow = $(window).scrollTop();
-  var topWindow = topWindow * 1.5;
-  var windowHeight = $(window).height();
-  var position = topWindow / windowHeight;
-  position = 1 - position;
-  $('.arrow-wrap').css('opacity', position);
-});
- 
-$(function() {
-  $('a[href*=#]:not([href=#])').click(function() {
-    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-      if (target.length) {
-        $('html,body').animate({
-          scrollTop: target.offset().top
-        }, 1000);
-        return false;
-      }
-    }
-  });
-});
 
 </script>
   
