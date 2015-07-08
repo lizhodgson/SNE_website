@@ -234,10 +234,13 @@ p.links {
   margin: 0px;
 }
 
-.no-padding {
-  padding:0px;
+/*Table*/
+ 
+ 
+#space-col-left {
+  padding-right: 90px;
 }
-
+ 
 /*Footer*/
 
 a.contact-person{
@@ -246,7 +249,7 @@ a.contact-person{
 
 .bottom-footer{
   margin-top:10px;
-  padding-top:10px;
+  padding-top:60px;
 }
 
 .pre-footer {
@@ -271,6 +274,7 @@ a.contact-person{
   color:#fff;
   margin-top: 30px;
   text-align: center;
+  height: 400px
 }
 
 .footer-logo {
