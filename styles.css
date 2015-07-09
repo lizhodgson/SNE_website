@@ -118,7 +118,7 @@ background-color: #000;
 
 .navbar-inner.nav-press {
   background-image: url('img/media_page.jpg');
-  background-repeat: repeat-x;
+  background-position: 47px 0px;
 }
 
 .navbar-inner.nav-resume {
