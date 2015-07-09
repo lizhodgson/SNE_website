@@ -138,6 +138,7 @@
 
   <div class="container-fluid"> <!-- contact form and google map -->
 
+<div class="col-md-1"></div>
     <form method="post">
       <div class="col-md-4">
         <div class="form-group">
@@ -174,11 +175,12 @@
       </div>
     </form>
 
-  <div class="col-md-4"></div>
+  <div class="col-md-1"></div>
 
 <!--Google Map -->
 
   <div id="map-container" class="col-md-4"></div>
+  <div class="col-md-2"></div>
          
 </div>
  
