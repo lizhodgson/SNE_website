@@ -155,10 +155,10 @@ img.sne-logo  {
 }
 
   h2 {
-    font-family: "crimson";
+    font-family: "Playfair display";
     text-align: center;
     color: rgba(26, 26, 26, 0.9);
-    font-size: 34px;
+    font-size: 32px;
     letter-spacing: 0px;
     font-weight: 400;
     font-style: normal;
@@ -220,7 +220,7 @@ p.links {
 
 .above-title {
   display: block;
-  font-family: "crimson";
+  font-family: "playfair";
   font-size: 25px;
   line-height:1em;
   text-align: center;
