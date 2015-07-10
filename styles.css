@@ -167,6 +167,7 @@ img.sne-logo  {
 
 h2.text-align-center {
  padding-top: 30px; 
+ margin-top: 5px;
 }
 
 
@@ -206,6 +207,9 @@ hr {
   color: #000;
 }
 
+#content.content {
+  padding-top: 55px;
+}
   
 /*END OF BIO AND BACKGROUND AREA */
 
