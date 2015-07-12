@@ -291,6 +291,60 @@ a.contact-person{
 }
 
 
+/*PRESS PAGE*/
+
+/*#press-clipping .text-center {
+  background-color: red;
+  margin: auto;
+  width: 60%;
+}*/
+
+.press-clipping .block-content .show_name {
+  font-family: "PT sans";
+  font-size: 12px;
+  text-transform: uppercase;
+  color: #696969;
+}
+
+.press-clipping .block-content .press-headline {
+  font-family: "Playfair display";
+  font-size: 24px;
+  color: #696969;
+}
+
+.press-clipping .block-content .first-line {
+  font-family: "PT sans";
+  font-size: 18px;
+  color: #696969;
+  margin-top: 10px;
+}
+
+.press-clipping .block-content .read-article {
+  text-decoration: underline;
+  font-family: "PT sans";
+  font-size: 12px;
+  color: #696969;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*PRESS PAGE*/
+
+
+
 /*contact page*/
 
 .shatner {
