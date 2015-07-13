@@ -293,33 +293,35 @@ a.contact-person{
 
 /*PRESS PAGE*/
 
-/*#press-clipping .text-center {
-  background-color: red;
+#press {
   margin: auto;
   width: 60%;
-}*/
+}
 
-.press-clipping .block-content .show_name {
+p.show_name {
   font-family: "PT sans";
   font-size: 12px;
   text-transform: uppercase;
   color: #696969;
 }
 
-.press-clipping .block-content .press-headline {
+
+p.press-headline {
   font-family: "Playfair display";
   font-size: 24px;
   color: #696969;
+  padding-right: 600px;
 }
 
-.press-clipping .block-content .first-line {
+p.first-line {
   font-family: "PT sans";
   font-size: 18px;
   color: #696969;
   margin-top: 10px;
+  padding-right: 600px;
 }
 
-.press-clipping .block-content .read-article {
+h6.read-article {
   text-decoration: underline;
   font-family: "PT sans";
   font-size: 12px;
@@ -327,22 +329,6 @@ a.contact-person{
   text-transform: uppercase;
   margin-top: 10px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*PRESS PAGE*/
-
 
 
 /*contact page*/
