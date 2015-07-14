@@ -82,6 +82,11 @@ padding: 5px;
     color: #fff;
   }
 
+.credits_contact.download_resume {
+  margin-top: -10px;
+  margin-bottom: 0px;
+}
+
 
 .social-icon {
   width: 32px;
@@ -93,11 +98,6 @@ padding: 5px;
 h2.above-title {
   position: relative;
   bottom: -90px; 
-}
-
-.credits_contact.download_resume {
-  margin-top: -10px;
-  margin-bottom: 0px;
 }
 
 /*.container dl_button download_cv {
@@ -239,6 +239,10 @@ p.links {
 }
 
 /*Table*/
+
+.thumbnail-label {
+  color: red;
+}
  
  
 #space-col-left {
