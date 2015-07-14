@@ -2,10 +2,10 @@
 
 .navbar-inverse {
   /* background-color: #222; */
-  background-color: transparent;
   background-size: cover;
   background-image: url('img/film_crew_landing_page_bw.jpg');
   background-repeat: repeat-x;
+  border-color: #fff;
 }
 
 .navbar-right {
@@ -86,6 +86,7 @@ padding: 5px;
   color: #fff;
   margin-right: 20px;
   border-right-width: 2px;
+ /* margin-bottom: 10px;*/
 }
 
 .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
@@ -105,6 +106,11 @@ padding: 5px;
 a.button-link, a:visited{
      color: #fff;
      text-decoration: none
+}
+
+.btn-group-vertical>.btn, .btn-group>.btn {
+  position: relative;
+  float: center;
 }
 
 .social-icon {
