@@ -275,6 +275,10 @@ p.links {
 #space-col-left {
   padding-right: 90px;
 }
+
+
+
+
  
 /*Footer*/
 
@@ -419,8 +423,7 @@ p.contact_info {
 .table.table-hover{
  margin-top: 40px; 
 }
- 
- /* Contact page-Resume button */
+
 
 #projects_link.download_cv {
   padding-left: 15px;
