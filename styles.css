@@ -51,9 +51,9 @@ padding: 5px;
 
 #company_name_masthead {
     position: relative;
-    top: 77px;
+    top: 42px;
     display: block;
-    height: 200px;
+    height: 149px;
     margin-bottom: -10px;
     font-family: "montserrat";
     font-size: 30px;
@@ -78,7 +78,6 @@ padding: 5px;
 }
 
 .btn-black.btn-group {
-  font-family: "montserrat";
   color: #fff;
    letter-spacing: 2px;
     font-weight: 400;
@@ -99,6 +98,13 @@ padding: 5px;
   padding: 12px 22px;
 }
 
+.btn-group{
+  padding-bottom: 30px;
+  padding-top: 30px;
+}
+   
+
+
 .btn-white.btn-primary.outline {
   border-radius: 0 !important;
   border: 2px solid #fff;
@@ -114,6 +120,8 @@ padding: 5px;
   color: #000000;
   margin-right: 20px;
   border-right-width: 2px;
+  font-size: 13px;
+  font-family: "montserrat";
  /* margin-bottom: 10px;*/
 }
 
@@ -136,7 +144,7 @@ a.button-link, a:visited{
      text-decoration: none
 }
 
-.btn-group-vertical>.btn, .btn-group>.btn {
+.btn-group-vertical>.btn-white, .btn-group>.btn-white {
   position: relative;
   float: center;
 }
@@ -301,9 +309,6 @@ p.links {
 #space-col-left {
   padding-right: 90px;
 }
-
-
-
 
  
 /*Footer*/
@@ -495,7 +500,7 @@ html, body {
   position:absolute;
   z-index:1;
   left:50%;
-  top: 62px;
+  top: 53px;
   margin-left:-5em;
   background:#111;
   width:10em;
