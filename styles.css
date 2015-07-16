@@ -65,7 +65,7 @@ padding: 5px;
     color: #FFF;
 }
 
-.btn-group {
+.btn-white.btn-group {
   font-family: "montserrat";
   color: #fff;
    letter-spacing: 2px;
@@ -77,15 +77,41 @@ padding: 5px;
 
 }
 
-.btn.outline {
+.btn-black.btn-group {
+  font-family: "montserrat";
+  color: #fff;
+   letter-spacing: 2px;
+    font-weight: 400;
+    font-style: normal;
+    text-decoration: none;
+    padding: .5em .75em;
+    margin: 10px;
+
+}
+
+.btn-white.outline {
   background: none;
   padding: 12px 22px;
 }
 
-.btn-primary.outline {
+.btn-black.outline {
+  background: none;
+  padding: 12px 22px;
+}
+
+.btn-white.btn-primary.outline {
   border-radius: 0 !important;
   border: 2px solid #fff;
   color: #fff;
+  margin-right: 20px;
+  border-right-width: 2px;
+ /* margin-bottom: 10px;*/
+}
+
+.btn-black.btn-primary.outline {
+  border-radius: 0 !important;
+  border: 2px solid #000000;
+  color: #000000;
   margin-right: 20px;
   border-right-width: 2px;
  /* margin-bottom: 10px;*/
@@ -469,7 +495,7 @@ html, body {
   position:absolute;
   z-index:1;
   left:50%;
-  top: 0px;
+  top: 62px;
   margin-left:-5em;
   background:#111;
   width:10em;
