@@ -475,6 +475,11 @@ p.contact_info {
   padding-right: 4px;
 }
 
+.description {
+  color:#696969;
+  font-size: 12px;
+}
+
 /* Contact page-Image */
 
 .img-res {
