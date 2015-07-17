@@ -139,7 +139,7 @@ padding: 5px;
 }
 
 a.button-link, a:visited{
-     color: #fff;
+     color: #696969;
      text-decoration: none
 }
 
@@ -292,6 +292,7 @@ p.links {
   font-weight: 400;
   font-style: italic;
   color: #FFF;
+  top: 150px;
 }
 
 .no-margin {
@@ -375,7 +376,7 @@ p.press-headline {
   font-family: "Playfair display";
   font-size: 24px;
   color: #696969;
-  padding-right: 600px;
+ /* padding-right: 600px;*/
 }
 
 p.first-line {
@@ -383,7 +384,7 @@ p.first-line {
   font-size: 18px;
   color: #696969;
   margin-top: 10px;
-  padding-right: 600px;
+  /*padding-right: 600px;*/
 }
 
 h6.read-article {
