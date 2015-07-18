@@ -71,7 +71,7 @@
     <div class = "navbar navbar-inverse navbar-inner nav-contact navbar-static-top">
       <div class = "container">
         <a href = "http://sundaynight.ca/index.html" class = "navbar-brand">
-          <img class="sne-logo" src = "img/SNE_logo.png" class="img-responsive">
+          <img class="sne-logo" src = "img/sne_logo_0710.png" class="img-responsive">
         </a>
     
           <button class = "navbar-toggle" data-toggle = "collapse" data-target = ".navHeaderCollapse">
@@ -92,11 +92,11 @@
       </div> <!-- CONTAINER NAV -->
     
       <div>
-        <h2 class="above-title">
+        <h2 id = "company_name_masthead_top" class="above-title">
           <p>The quickest way...</p>
         </h2>
 
-        <p id = "company_name_masthead">to get in touch</p> 
+        <p id = "company_name_masthead_bottom">to get in touch</p> 
        
       </div>  
     </div>
@@ -105,9 +105,8 @@
 
   <div class="container-fluid contact_page_top">
     <div class="row" class = "contact_info">
-      <div class="col-lg-6">
             
-        <div class = "contact_info">
+        <div class = "contact_info col-lg-6">
           <h2 class = "contact_us">Contact Information</h2>
           <p class = "contact_info">
             <a href = "tel:+14169194829" class = "phone-number">416.919.4829</a><br>
@@ -115,17 +114,18 @@
             199 Clinton Street<br>
             Toronto, Ontario | M6G 2Y4
           </p>
-          <div class = "col-lg-6 download_cv">
-            <p class = "links">
-              <a class = "cv_download" href="/pdf/sne_cv.pdf">download cv</a>
-            </p>
-          </div>
+
+          <div class = "credits_contact container-fluid">
+            <center>
+              <div class="btn-group download_cv" role="group" aria-label="...">
+                <a type="button"class="button-link btn-black btn-primary btn-lg outline" href ="pdf/scott_harper_cv.pdf">DOWNLOAD CV</a>
+              </div> 
+            <center>
+          </div>  
         </div> <!-- contact info -->
 
-      </div>
-
-        <div class="col-lg-6 img-res">
-            <img class = "shatner" img src = "img/scott_and_shatner.jpg">
+        <div class="col-lg-6 img-resp">
+            <img class = "shatner img-responsive" src = "img/scott_and_shatner.jpg">
         </div>
 
     </div>
@@ -134,9 +134,9 @@
           <hr width="75%">
       </div> 
 
-  </div> <!-- end of contact information -->
+</div> <!-- end of contact information -->
 
-  <div class="container-fluid"> <!-- contact form and google map -->
+<div class="container-fluid"> <!-- contact form and google map -->
 
 <div class="col-md-1"></div>
     <form method="post">
@@ -197,7 +197,7 @@
 
       <div class = "footer-logo">
         <center>
-          <img src="img/SNE_logo.png" alt="Alternate Logo">
+          <img src="img/sne_logo_0710.png" alt="Alternate Logo">
         </center>
       </div>  
 
