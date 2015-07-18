@@ -49,9 +49,17 @@ padding: 5px;
     position: relative;
 }
 
-#company_name_masthead {
+#company_name_masthead_top {
     position: relative;
-    top: 42px;
+    top: -100px;
+}
+
+#company_name_masthead_top.above-title {
+  top: 56px;
+}
+#company_name_masthead_bottom {
+    position: relative;
+    top: 60px;
     display: block;
     height: 149px;
     margin-bottom: -10px;
@@ -123,6 +131,7 @@ padding: 5px;
   font-size: 13px;
   font-family: "montserrat";
 }
+
 
 .btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
     color: #696969;
@@ -227,7 +236,7 @@ img.sne-logo  {
 
 h2.text-align-center {
  padding-top: 30px; 
- margin-top: 5px;
+ margin-top: 35px;
 }
 
 
