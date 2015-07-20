@@ -350,13 +350,21 @@ p.links {
   display: inline-block;
   vertical-align: middle;
   float: none;
+  padding-top: 10px;
+  padding-left: 28px;
 }
 
-
-.boxed {
+.boxed{
   border: 1px solid white ;
   width: 150px;
-  height: 30px;
+  height: 35px;
+  margin: 0 auto;
+}
+
+.boxed.clip {
+  border: 1px solid white ;
+  width: 150px;
+  height: 35px;
   margin: 0 auto;
 }
  
