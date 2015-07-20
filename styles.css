@@ -235,8 +235,9 @@ img.sne-logo  {
 }
 
 h2.text-align-center {
- padding-top: 30px; 
- margin-top: 35px;
+   padding-top: 30px;
+   padding-bottom: 30px; 
+   margin-top: 35px;
 }
 
 
@@ -283,6 +284,12 @@ hr {
 /*END OF BIO AND BACKGROUND AREA */
 
 /* COMPLETE FILMOGRAPHY BUTTON */
+
+.featured_projects .container .row {
+
+  padding-bottom: 40px;
+}
+
 
 p.links {
   margin-bottom: 70px;
@@ -367,6 +374,7 @@ p.links {
   height: 35px;
   margin: 0 auto;
 }
+
  
 /*Footer*/
 
@@ -409,6 +417,7 @@ a.contact-person{
 }
 
 .copyright {
+  font-size: 16px;
   font-family: "PT sans";
   color: #696969;
 }
@@ -444,6 +453,26 @@ p.first-line {
   /*padding-right: 600px;*/
 }
 
+
+h5.sne-credit {
+  text-decoration: none;
+  font-family: "montserrat";
+  font-size: 14px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
+p.sne-credit {
+  text-decoration: none;
+  font-family: "PT sans";
+  font-weight: 400;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 10px;
+}
+
 h6.read-article {
   text-decoration: underline;
   font-family: "PT sans";
@@ -452,7 +481,6 @@ h6.read-article {
   text-transform: uppercase;
   margin-top: 10px;
 }
-
 
 /*contact page*/
 
