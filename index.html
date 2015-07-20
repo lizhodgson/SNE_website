@@ -110,17 +110,23 @@ watch trailer -->
         <div class="thumbnails">
           <div class="col-sm-4">
             <a rel="prettyPhoto[gallery12]" href="https://vimeo.com/132504718" class="thumbnail">
-              <img class="img-responsive" src = "img/disruption.jpg" alt="Soaking in it">
+              <img id="d1" class="img-responsive" src = "img/disruption.jpg" width="300" height="240" alt="Soaking in it">
+              <div class="contenthover">
+                <h3>Lorem ipsum dolor</h3>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+              </div>
             </a>
           </div>
         </div>
 
-
-
         <div class="thumbnails">
           <div class="col-sm-4">
             <a rel="prettyPhoto[gallery13]" href="https://vimeo.com/132504509" class="thumbnail">
-            <img class="img-responsive" src = "img/clara.jpeg" alt="Clara Hughes">
+            <img id="d1" class="img-responsive" src = "img/clara.jpeg" width="300" height="240" alt="Clara Hughes">
+            <div class="contenthover">
+                <h3>Lorem ipsum dolor</h3>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+            </div>
             </a>
           </div>
         </div> 
@@ -128,12 +134,18 @@ watch trailer -->
         <div class="thumbnails">
           <div class="col-sm-4">
             <a rel="prettyPhoto[gallery14]" href="https://vimeo.com/132504511" class="thumbnail">
-            <img class="img-responsive" src = "img/pigeoncam_1280.jpg" alt="Pigeon Couple">
+            <img id="d1" class="img-responsive" src = "img/pigeoncam_1280.jpg" width="300" height="240"  alt="Pigeon Couple">
+            <div class="contenthover">
+                <h3>Lorem ipsum dolor</h3>
+                  <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum pulvinar ante quis augue lobortis volutpat. </p>
+            </div>
             </a>
           </div>
         </div>  
       </div><!--row-->
     </div><!--container -->
+
+  
 
     <div class = "credits_contact container-fluid" style= "padding-top: 12px;">
         <center>
@@ -142,7 +154,6 @@ watch trailer -->
           </div> 
         <center>
     </div>
-
 </div>
         </section>
   
@@ -189,12 +200,17 @@ watch trailer -->
 
 <script src="bootstrap/js/jquery.min.js"></script>
 <script src="bootstrap/js/bootstrap.min.js"></script> 
+<script src="bootstrap/js/contentHover.js"></script>
 <script src="pretty_photo/js/jquery.prettyPhoto.js"></script>
 
 <script>
 
 $(document).ready(function(){
   $("[rel^='prettyPhoto']").prettyPhoto();
+  $('#d1').contenthover({
+    overlay_background:'#000',
+    overlay_opacity:0.8
+  });
 });
 
 //opacity to the arrow
