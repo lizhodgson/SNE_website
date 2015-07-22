@@ -50,13 +50,17 @@ padding: 5px;
 }
 
 #company_name_masthead_top {
+    color: #fff;
+    font-size: 22px;
+    font-style: italic;
     position: relative;
-    top: -100px;
+    top: -25px;
 }
 
 #company_name_masthead_top.above-title {
   top: 56px;
 }
+
 #company_name_masthead_bottom {
     position: relative;
     top: 60px;
@@ -285,6 +289,7 @@ hr {
 
 /* COMPLETE FILMOGRAPHY BUTTON */
 
+
 .featured_projects .container .row {
 
   padding-bottom: 40px;
@@ -296,7 +301,7 @@ p.links {
   margin-top: 30px;
 }
 
-/* END OF COMPLETE FILMOGRAPHY BUTTON */
+/* END OF COMPLETE FILMOGRAPHY BUTTON 
 
 .above-title {
   display: block;
