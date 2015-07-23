@@ -113,8 +113,8 @@
         199 Clinton Street<br>
         Toronto, Ontario | M6G 2Y4
       </p>
-      <div class="btn-group download_cv" role="group" aria-label="...">
-        <a type="button"class="button-link btn-black btn-primary btn-lg outline" href ="pdf/scott_harper_cv.pdf">DOWNLOAD CV</a>
+      <div id="contact"class="btn-group download_cv" role="group" aria-label="...">
+        <a id="contact" type="button"class="button-link btn-black btn-primary btn-lg outline" href ="pdf/scott_harper_cv.pdf">DOWNLOAD CV</a>
       </div> 
     </div> <!-- contact info -->
     
