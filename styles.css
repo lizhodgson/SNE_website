@@ -111,7 +111,7 @@ padding: 5px;
 }
 
 .btn-group{
-  padding-bottom: 30px;
+  padding-bottom: 70px;
   padding-top: 30px;
 }
    
@@ -127,6 +127,7 @@ padding: 5px;
 }
 
 .btn-black.btn-primary.outline {
+  margin-left: 125px;
   border-radius: 0 !important;
   border: 2px solid #000000;
   color: #000000;
@@ -672,4 +673,12 @@ html, body {
 .contenthover a.mybutton { display:block; float:left; padding:5px 10px; background:#3c9632; color:#fff; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; }
 .contenthover a.mybutton:hover { background:#34742d }
 
+/* Contact Page*/
 
+.btn {
+    margin-bottom: 25px;
+  }
+
+.section_break_rule {
+   margin-top: 40px;
+}
