@@ -103,36 +103,34 @@
 
 <!-- EVERYTHING AFTER THE BANNER AND BEFORE THE FOOTER STARTS HERE -->
 
-  <div class="container-fluid contact_page_top">
-    <div class="row" class = "contact_info">
-            
-        <div class = "contact_info col-lg-6">
-          <h2 class = "contact_us">Contact Information</h2>
-          <p class = "contact_info">
-            <a href = "tel:+14169194829" class = "phone-number">416.919.4829</a><br>
-            <a href = "mailto:scott@sundaynight.ca" class = "email">scott@sundaynight.ca</a><br>
-            199 Clinton Street<br>
-            Toronto, Ontario | M6G 2Y4
-          </p>
-
-          <div class = "credits_contact container-fluid">
-            <center>
-              <div class="btn-group download_cv" role="group" aria-label="...">
-                <a type="button"class="button-link btn-black btn-primary btn-lg outline" href ="pdf/scott_harper_cv.pdf">DOWNLOAD CV</a>
-              </div> 
-            <center>
-          </div>  
-        </div> <!-- contact info -->
-
-        <div class="col-lg-6 img-resp">
-            <img class = "shatner img-responsive" src = "img/scott_and_shatner.jpg">
-        </div>
-
-    </div>
-
-      <div class = "section_break_rule">
-          <hr width="75%">
+<div class="container-fluid contact_page_top">
+  <div class="row" class = "contact_info">     
+    <div class = "contact_info col-md-4">
+      <h2 class = "contact_us">Contact Information</h2>
+      <p class = "contact_info">
+        <a href = "tel:+14169194829" class = "phone-number">416.919.4829</a><br>
+        <a href = "mailto:scott@sundaynight.ca" class = "email">scott@sundaynight.ca</a><br>
+        199 Clinton Street<br>
+        Toronto, Ontario | M6G 2Y4
+      </p>
+      <div class="btn-group download_cv" role="group" aria-label="...">
+        <a type="button"class="button-link btn-black btn-primary btn-lg outline" href ="pdf/scott_harper_cv.pdf">DOWNLOAD CV</a>
       </div> 
+    </div> <!-- contact info -->
+    
+    <div class="col-md-2"></div>
+    <div class="col-md-4 img-resp">
+    <center>
+        <img class = "img-responsive" src = "img/scott_and_shatner.jpg">
+      </center>
+    </div>
+    <div class="col-md-2"></div>
+
+  </div>
+
+    <div class = "section_break_rule">
+        <hr width="75%">
+    </div> 
 
 </div> <!-- end of contact information -->
 
