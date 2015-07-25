@@ -275,13 +275,6 @@ hr {
 
 /* COMPLETE FILMOGRAPHY BUTTON */
 
-
-.featured_projects .container .row {
-
-  padding-bottom: 40px;
-}
-
-
 p.links {
   margin-bottom: 70px;
   margin-top: 30px;
@@ -404,10 +397,6 @@ h5.sne-credit {
   margin-top: 10px;
 }
 
-h5.sne-credit.long {
-  font-size: 10px;
-}
-
 p.sne-credit {
   text-decoration: none;
   font-family: "PT sans";
@@ -513,7 +502,7 @@ p.contact_info {
 /* Contact page-Image */
 
 .img-res {
-  padding-top: 20px;f
+  padding-top: 20px;
   padding-bottom: 100px;
 }
 
@@ -637,7 +626,7 @@ html, body {
   font-style: italic;
   text-align: center;
   color: #fff;
-
+  margin-top: 20px;
 }
 
 .contenthover #show-name {
@@ -645,23 +634,7 @@ html, body {
   font-size: 14px;
   text-align: center;
   color: #fff;
-  margin-bottom: 0px;
-}
-
-.contenthover #show-name-long{
-  font-family: "montserrat";
-  font-size: 12px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 2px;
-}
-
-.contenthover #show-name-very-long{
-  font-family: "montserrat";
-  font-size: 9px;
-  text-align: center;
-  color: #fff;
-  margin-bottom: 2px;
+  margin-bottom: 15px;
 }
 
 .contenthover #watch_trailer {  
@@ -692,10 +665,6 @@ html, body {
   width: 150px;
   height: 35px;
   margin: 0 auto;
-}
-
-.col-sm-4.photo-descrip {
-  padding-bottom: 20px;
 }
 
 /* Clip Animation */
@@ -803,3 +772,95 @@ html, body {
 .media:nth-child(5) .media__body { background: rgba(185, 146, 41, 0.7); }
 
 .media:nth-child(6) .media__body { background: rgba(128, 185, 41, 0.7); }
+
+/* Clip Text Responsiveness Media Queries */
+
+@media (max-width: 1199px) {
+  .contenthover #genre {
+    font-size: 17px;
+    margin-top: 10px;
+  }
+  .contenthover #show-name{
+    font-size: 12px;
+  }
+  h5.sne-credit {
+    font-size: 12px;
+  }
+  .copyright{
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 991px) {
+  .contenthover #genre {
+    font-size: 16px;
+    margin-top: -14px;
+  }
+  .contenthover #show-name{
+    font-size: 10px;
+  }
+  h5.sne-credit {
+    font-size: 8px;
+  }
+  .copyright{
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 767px) {
+ .contenthover #genre {
+    font-size: 25px;
+    margin-top: 115px;
+  }
+  .contenthover #show-name{
+    font-size: 18px;
+  }
+  h5.sne-credit {
+    font-size: 26px;
+  }
+  .copyright{
+    font-size: 24px;
+  }
+}
+
+@media (max-width: 688px) {
+ .contenthover #genre {
+    font-size: 23px;
+    margin-top: 90px;
+  }
+  .contenthover #show-name{
+    font-size: 16px;
+  }
+   h5.sne-credit {
+    font-size: 22px;
+  }
+  .copyright{
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 588px) {
+ .contenthover #genre {
+    font-size: 22px;
+    margin-top: 65px;
+  }
+  .contenthover #show-name{
+    font-size: 15px;
+  }
+   h5.sne-credit {
+    font-size: 18px;
+  }
+  .copyright{
+    font-size: 18px;
+  }
+}
+
+@media (max-width: 500px) {
+ .contenthover #genre {
+    font-size: 20px;
+    margin-top: 35px;
+  }
+  .contenthover #show-name{
+    font-size: 14px;
+  }
+}
