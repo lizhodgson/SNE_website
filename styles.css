@@ -133,6 +133,16 @@ padding: 5px;
   font-family: "montserrat";
 }
 
+.btn-primary.outline:hover, .btn-primary.outline:focus, .btn-primary.outline:active, .btn-primary.outline.active, .open > .dropdown-toggle.btn-primary {
+    color: #696969;
+    border-color:  #696969;
+}
+.btn-primary.outline:active, .btn-primary.outline.active {
+    border-color: #007299;
+    color: #007299;
+    box-shadow: none;
+}
+
 .button-link {
   color: #fff;
 }
@@ -523,21 +533,21 @@ html, body {
 .arrow-wrap{
   position:absolute;
   z-index:1;
-  left:50%;
-  top: 53px;
-  margin-left:-5em;
-  background:#111;
+  left:47%;
+  top: 47px;
+ /* margin-left:-5em;
+  background:#111;*/
   width:10em;
   height:10em;
   padding:4em 2em;
   border-radius:50%;
   font-size:0.5em;
   display:block;
-  box-shadow:0px 0px 5px 0px #333;
+/*  box-shadow:0px 0px 5px 0px #333;*/
 }
 
 .arrow-wrap.projects-arrow {
- top: 72px; 
+ top: 66px; 
 }
 
 .arrow-wrap.contact-arrow {
@@ -805,6 +815,9 @@ html, body {
   .copyright{
     font-size: 10px;
   }
+  .arrow-wrap{
+  left:46%;
+  }
 }
 
 @media (max-width: 767px) {
@@ -837,6 +850,9 @@ html, body {
   .copyright{
     font-size: 22px;
   }
+   .arrow-wrap{
+  left:44%;
+  }
 }
 
 @media (max-width: 588px) {
@@ -862,5 +878,8 @@ html, body {
   }
   .contenthover #show-name{
     font-size: 14px;
+  }
+  .arrow-wrap{
+  left:40%;
   }
 }
