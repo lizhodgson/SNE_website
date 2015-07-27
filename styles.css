@@ -292,23 +292,6 @@ p.links {
 
 /* END OF COMPLETE FILMOGRAPHY BUTTON 
 
-.above-title {
-  display: block;
-  font-family: "playfair";
-  font-size: 25px;
-  line-height:1em;
-  text-align: center;
-  letter-spacing: 2px;
-  font-weight: 400;
-  font-style: italic;
-  color: #FFF;
-  top: 150px;
-}
-
-.no-margin {
-  margin: 0px;
-}
-
 /*Table*/
 
 .thumbnail-label {
