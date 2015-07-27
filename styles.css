@@ -1,10 +1,8 @@
-
 /*Navbar*/
 
 .navbar-inverse {
   /* background-color: #222; */
   background-size: cover;
-  background-image: url('img/film_crew_landing_page_bw.jpg');
   background-repeat: repeat-x;
   border-color: #fff;
 }
@@ -169,37 +167,57 @@ h2.above-title {
   bottom: -90px; 
 }
 
-/*.container dl_button download_cv {
-background-color: #000;
-
-}*/
-
-.navbar-inner.nav-index {
-  background-image: url('img/film_crew_landing_page_bw.jpg');
+.navbar-inner.nav-index{
+  transition: background-image 2s ease-in;
+  background-image:url("img/film_crew_landing_page_bw.jpg");
   background-repeat: repeat-x;
-  background-position: 0% 58%;
+  background-position: 0% 58%; 
+}
+
+.navbar-inner.nav-index:hover{
+  background-image:url("http://s614.photobucket.com/user/janinesybolanos/media/black-background-300x240.jpg");
 }
 
 .navbar-inner.nav-project {
+  transition: background-image 2s ease-in;
   background-image: url('img/pigeons_cv_page.jpg');
   background-repeat: repeat-x;
 }
 
+.navbar-inner.nav-project:hover{
+  background-image:url("http://s614.photobucket.com/user/janinesybolanos/media/black-background-300x240.jpg");
+}
+
 .navbar-inner.nav-press {
+  transition: background-image 2s ease-in;
   background-image: url('img/media_page.jpg');
   background-position: 47px 0px;
 }
 
+.navbar-inner.nav-press:hover{
+  background-image:url("http://s614.photobucket.com/user/janinesybolanos/media/black-background-300x240.jpg");
+}
+
 .navbar-inner.nav-resume {
+  transition: background-image 2s ease-in;
   background-image: url('img/resume_page.jpg');
   background-repeat: repeat-x;
   background-position: 0% 28%;
 }
 
+.navbar-inner.nav-resume:hover{
+  background-image:url("http://s614.photobucket.com/user/janinesybolanos/media/black-background-300x240.jpg");
+}
+
 .navbar-inner.nav-contact {
+   transition: background-image 2s ease-in;
   background-image: url('img/toronto_at_night_BW.jpg');
   background-repeat: repeat-x;
   background-position: 0% 56%;
+}
+
+.navbar-inner.nav-contact:hover{
+  background-image:url("http://s614.photobucket.com/user/janinesybolanos/media/black-background-300x240.jpg");
 }
 
 /*Logo*/
