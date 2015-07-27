@@ -209,7 +209,7 @@ h2.above-title {
 }
 
 .navbar-inner.nav-contact {
-   transition: background-image 2s ease-in;
+   transition: background-image 1s ease-in;
   background-image: url('img/toronto_at_night_BW.jpg');
   background-repeat: repeat-x;
   background-position: 0% 26%;
