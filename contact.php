@@ -105,7 +105,7 @@
 
 <div class="container-fluid contact_page_top">
   <div class="row" class = "contact_info">     
-    <div class = "contact_info col-md-4">
+    <div class = "contact_info col-md-5">
       <h2 class = "contact_us">Contact Information</h2>
       <p class = "contact_info">
         <a href = "tel:+14169194829" class = "phone-number">416.919.4829</a><br>
@@ -120,11 +120,11 @@
     
     <div class="col-md-2"></div>
     <div class="col-md-4 img-resp">
-    <center>
-        <img class = "img-responsive" src = "img/scott_and_shatner.jpg">
+      <center>
+        <img class = "shatner img-responsive" src = "img/scott_and_shatner.jpg">
       </center>
     </div>
-    <div class="col-md-2"></div>
+    <div class="col-md-1"></div>
 
   </div>
 
@@ -165,7 +165,7 @@
         <div class="form-group">
 
           <label for="comment">Message:</label>
-          <textarea name="comment" class="form-control" <?php echo $_POST['comment']; ?>></textarea>
+          <textarea rows="4" name="comment" class="form-control" <?php echo $_POST['comment']; ?>> </textarea>
         
         </div>
 

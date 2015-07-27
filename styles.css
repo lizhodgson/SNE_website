@@ -429,12 +429,12 @@ h6.read-article {
 /*contact page*/
 
 .shatner {
-  margin-left: 125px;
-}
+  margin-top: 23px;
+} 
 
 h2.contact_us {
     font-family: "montserrat";
-    font-size: 22px;
+    font-size: 20px;
     line-height: 1.2em;
     text-transform: uppercase;
     text-align: left;
@@ -623,7 +623,7 @@ html, body {
 }
 
 #contact.btn-group{
-  padding-bottom: 70px;
+  padding-bottom: 55px;
 }
 
 /*Clip Labels*/
@@ -883,6 +883,15 @@ html, body {
     font-size: 14px;
   }
   .arrow-wrap{
-  left:40%;
+    left:40%;
   }
+  h2.contact_us {
+    margin-left: 25px;
+  }
+  p.contact_info {
+    margin-left: 64px;
+  } 
+  #contact.btn-black.btn-primary.outline{
+    margin-left: 66px;
+  }     
 }
