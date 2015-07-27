@@ -168,10 +168,9 @@ h2.above-title {
 }
 
 .navbar-inner.nav-index{
-  transition: background-image 2s ease-in;
+  transition: background-image 1s ease-in;
   background-image:url("img/film_crew_landing_page_bw.jpg");
-  background-repeat: repeat-x;
-  background-position: 0% 58%; 
+  background-repeat: repeat-x; 
 }
 
 .navbar-inner.nav-index:hover{
@@ -179,7 +178,7 @@ h2.above-title {
 }
 
 .navbar-inner.nav-project {
-  transition: background-image 2s ease-in;
+  transition: background-image 1s ease-in;
   background-image: url('img/pigeons_cv_page.jpg');
   background-repeat: repeat-x;
 }
@@ -189,7 +188,7 @@ h2.above-title {
 }
 
 .navbar-inner.nav-press {
-  transition: background-image 2s ease-in;
+  transition: background-image 1s ease-in;
   background-image: url('img/media_page.jpg');
   background-position: 47px 0px;
 }
@@ -199,7 +198,7 @@ h2.above-title {
 }
 
 .navbar-inner.nav-resume {
-  transition: background-image 2s ease-in;
+  transition: background-image 1s ease-in;
   background-image: url('img/resume_page.jpg');
   background-repeat: repeat-x;
   background-position: 0% 28%;
@@ -213,7 +212,7 @@ h2.above-title {
    transition: background-image 2s ease-in;
   background-image: url('img/toronto_at_night_BW.jpg');
   background-repeat: repeat-x;
-  background-position: 0% 56%;
+  background-position: 0% 26%;
 }
 
 .navbar-inner.nav-contact:hover{
@@ -645,6 +644,14 @@ html, body {
   margin-bottom: 15px;
 }
 
+.contenthover #genre-projects {
+  font-family: "Playfair+Display";
+  font-style: italic;
+  text-align: center;
+  color: #fff;
+  margin-top: 70px;
+}
+
 .contenthover #watch_trailer {  
   color: #fff;
   letter-spacing: 1px;
@@ -791,6 +798,14 @@ html, body {
   .contenthover #show-name{
     font-size: 12px;
   }
+  .contenthover #genre-projects {
+    font-size: 23px;
+    margin-top: 45px;
+  }
+  .contenthover #show-name-projects{
+    font-size: 14px;
+  }
+
   h5.sne-credit {
     font-size: 12px;
   }
@@ -806,6 +821,13 @@ html, body {
   }
   .contenthover #show-name{
     font-size: 10px;
+  }
+  .contenthover #genre-projects {
+    font-size: 21px;
+    margin-top: 20px;
+  }
+  .contenthover #show-name-projects{
+    font-size: 12px;
   }
   h5.sne-credit {
     font-size: 8px;
@@ -826,6 +848,13 @@ html, body {
   .contenthover #show-name{
     font-size: 18px;
   }
+  .contenthover #genre-projects {
+    font-size: 25px;
+    margin-top: 80px;
+  }
+  .contenthover #show-name-projects{
+    font-size: 18px;
+  }
   h5.sne-credit {
     font-size: 26px;
   }
@@ -840,6 +869,13 @@ html, body {
     margin-top: 90px;
   }
   .contenthover #show-name{
+    font-size: 16px;
+  }
+  .contenthover #genre-projects {
+    font-size: 23px;
+    margin-top: 90px;
+  }
+  .contenthover #show-name-projects{
     font-size: 16px;
   }
    h5.sne-credit {
@@ -861,6 +897,13 @@ html, body {
   .contenthover #show-name{
     font-size: 15px;
   }
+   .contenthover #genre-projects {
+    font-size: 22px;
+    margin-top: 65px;
+  }
+  .contenthover #show-name-projects{
+    font-size: 15px;
+  }
    h5.sne-credit {
     font-size: 18px;
   }
@@ -875,6 +918,13 @@ html, body {
     margin-top: 20px;
   }
   .contenthover #show-name{
+    font-size: 14px;
+  }
+  .contenthover #genre-projects {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .contenthover #show-name-projects{
     font-size: 14px;
   }
   h5.sne-credit {
