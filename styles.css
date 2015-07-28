@@ -168,9 +168,11 @@ h2.above-title {
 }
 
 .navbar-inner.nav-index{
-  transition: background-image 1s ease-in;
   background-image:url("img/film_crew_landing_page_bw.jpg");
-  background-repeat: repeat-x; 
+  background-repeat: repeat-x;  
+  -webkit-transition: background-image 1s ease-in;
+  -moz-transition: background-image 1s ease-in;
+  transition: background-image 1s ease-in; 
 }
 
 .navbar-inner.nav-index:hover{
@@ -178,9 +180,11 @@ h2.above-title {
 }
 
 .navbar-inner.nav-project {
-  transition: background-image 1s ease-in;
   background-image: url('img/pigeons_cv_page.jpg');
   background-repeat: repeat-x;
+  -webkit-transition: background-image 1s ease-in;
+  -moz-transition: background-image 1s ease-in;
+  transition: background-image 1s ease-in; 
 }
 
 .navbar-inner.nav-project:hover{
@@ -188,9 +192,11 @@ h2.above-title {
 }
 
 .navbar-inner.nav-press {
-  transition: background-image 1s ease-in;
   background-image: url('img/media_page.jpg');
   background-position: 47px 0px;
+  -webkit-transition: background-image 1s ease-in;
+  -moz-transition: background-image 1s ease-in;
+  transition: background-image 1s ease-in; 
 }
 
 .navbar-inner.nav-press:hover{
@@ -198,10 +204,12 @@ h2.above-title {
 }
 
 .navbar-inner.nav-resume {
-  transition: background-image 1s ease-in;
   background-image: url('img/resume_page.jpg');
   background-repeat: repeat-x;
   background-position: 0% 28%;
+  -webkit-transition: background-image 1s ease-in;
+  -moz-transition: background-image 1s ease-in;
+  transition: background-image 1s ease-in; 
 }
 
 .navbar-inner.nav-resume:hover{
@@ -209,10 +217,12 @@ h2.above-title {
 }
 
 .navbar-inner.nav-contact {
-   transition: background-image 1s ease-in;
   background-image: url('img/toronto_at_night_BW.jpg');
   background-repeat: repeat-x;
   background-position: 0% 26%;
+  -webkit-transition: background-image 1s ease-in;
+  -moz-transition: background-image 1s ease-in;
+  transition: background-image 1s ease-in; 
 }
 
 .navbar-inner.nav-contact:hover{
