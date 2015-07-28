@@ -477,6 +477,9 @@ p.contact_info {
 
 #map-container { 
   height: 400px 
+}
+
+#map-container.col-md-4 {
   left: 75px;
 }
 
@@ -824,6 +827,9 @@ html, body {
   .copyright{
     font-size: 12px;
   }
+  #map-container.col-md-4 {
+    left: 87px;
+  }
 }
 
 @media (max-width: 991px) {
@@ -849,6 +855,12 @@ html, body {
   }
   .arrow-wrap{
   left:46%;
+  }
+  #map-container.col-md-4 {
+    left: none;
+  }
+  .shatner {
+  margin-left: none;
   }
 }
 
