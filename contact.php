@@ -144,21 +144,21 @@
         <?php echo $result; ?>
 
           <label for="name">Name:</label>
-          <input type="text" name="name" class="form-control" placeholder="e.g., John Doe" value="<?php echo $_POST['name']; ?>" />
+          <input type="text" name="name" class="form-control" value="<?php echo $_POST['name']; ?>" />
           
         </div>
 
         <div class="form-group">
 
           <label for="email">Email Address:</label>
-          <input type="email" name="email" class="form-control" placeholder="e.g., your.address@email.com" value="<?php echo $_POST['email']; ?>" />
+          <input type="email" name="email" class="form-control" value="<?php echo $_POST['email']; ?>" />
           
         </div>
 
         <div class="form-group">
 
           <label for="phone"> Phone number:</label>
-          <input type="phone" name="phone" class="form-control" placeholder="e.g., 416-555-5555" />
+          <input type="phone" name="phone" class="form-control" />
           
         </div>
 
