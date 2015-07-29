@@ -857,10 +857,10 @@ html, body {
   left:46%;
   }
   #map-container.col-md-4 {
-    left: none;
+    left: 0px;
   }
   .shatner {
-  margin-left: none;
+  margin-left: 0px;
   }
 }
 
