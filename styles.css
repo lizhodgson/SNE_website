@@ -549,21 +549,21 @@ html, body {
   position:absolute;
   z-index:1;
   left:47%;
-  top: 47px;
+  top: 57px;
   width:10em;
   height:10em;
-  padding:4em 2em;
+  padding:1em 1em;
   border-radius:50%;
-  font-size:0.5em;
+  font-size:0.7em;
   display:block;
 }
 
 .arrow-wrap.projects-arrow {
- top: 66px; 
+ top: 77px; 
 }
 
-.arrow-wrap.contact-arrow {
- top: 21px; 
+.arrow-wrap.resume-arrow {
+ top: 58px; 
 }
 
 /* Scroll Indicator- a triangle to make the main part of the arrow */
@@ -854,7 +854,7 @@ html, body {
     font-size: 10px;
   }
   .arrow-wrap{
-  left:46%;
+    left:46%;
   }
   #map-container.col-md-4 {
     left: 0px;
@@ -885,6 +885,16 @@ html, body {
   .copyright{
     font-size: 24px;
   }
+  .arrow-wrap{
+    top:63px;
+  }
+  .arrow-wrap.projects-arrow {
+    top: 82px; 
+  }
+  .arrow-wrap.resume-arrow {
+    top: 63px; 
+    left: 43%;
+  }
 }
 
 @media (max-width: 688px) {
@@ -909,7 +919,7 @@ html, body {
     font-size: 22px;
   }
    .arrow-wrap{
-  left:44%;
+    left:44%;
   }
 }
 
@@ -959,6 +969,9 @@ html, body {
   }
   .arrow-wrap{
     left:40%;
+  }
+  .arrow-wrap.resume-arrow {
+    left: 40%;
   }
   h2.contact_us {
     margin-left: 25px;
