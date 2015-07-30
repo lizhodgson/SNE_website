@@ -143,29 +143,29 @@
 
         <?php echo $result; ?>
 
-          <label for="name">Name:</label>
-          <input type="text" name="name" class="form-control" value="<?php echo $_POST['name']; ?>" />
+          <!-- <label for="name">Name:</label> -->
+          <input type="text" name="name" class="form-control" placeholder="Name:" value="<?php echo $_POST['name']; ?>" />
           
         </div>
 
         <div class="form-group">
 
-          <label for="email">Email Address:</label>
-          <input type="email" name="email" class="form-control" value="<?php echo $_POST['email']; ?>" />
+         <!--  <label for="email">Email Address:</label> -->
+          <input type="email" name="email" class="form-control" placeholder="Email Address:" value="<?php echo $_POST['email']; ?>" />
           
         </div>
 
         <div class="form-group">
 
-          <label for="phone"> Phone number:</label>
-          <input type="phone" name="phone" class="form-control" />
+          <!-- <label for="phone"> Phone number:</label> -->
+          <input type="phone" name="phone" class="form-control" placeholder="Phone number:"  />
           
         </div>
 
         <div class="form-group">
 
-          <label for="comment">Message:</label>
-          <textarea rows="4" name="comment" class="form-control" <?php echo $_POST['comment']; ?>> </textarea>
+          <!-- <label for="comment">Message:</label> -->
+          <textarea rows="4" placeholder="Message:" name="comment" class="form-control"  <?php echo $_POST['comment']; ?>> </textarea>
         
         </div>
 
