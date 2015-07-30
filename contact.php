@@ -150,22 +150,19 @@
 
         <div class="form-group">
 
-         <!--  <label for="email">Email Address:</label> -->
           <input type="email" name="email" class="form-control" placeholder="Email Address:" value="<?php echo $_POST['email']; ?>" />
           
         </div>
 
         <div class="form-group">
 
-          <!-- <label for="phone"> Phone number:</label> -->
           <input type="phone" name="phone" class="form-control" placeholder="Phone number:"  />
           
         </div>
 
         <div class="form-group">
 
-          <!-- <label for="comment">Message:</label> -->
-          <textarea rows="4" placeholder="Message:" name="comment" class="form-control"  <?php echo $_POST['comment']; ?>> </textarea>
+          <textarea rows="4"  name="comment" class="form-control" placeholder="Message:"><?php echo $_POST['comment']; ?></textarea>
         
         </div>
 
